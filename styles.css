@@ -92,14 +92,21 @@ button {
 /* ===== Header / Hero ===== */
 .site-header {
   background-color: #0b1630;
+  background-image: linear-gradient(rgba(11, 22, 48, 0.82), rgba(11, 22, 48, 0.82)),
+    url("assets/imagem-dashboard-meritum-1024x545.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #ffffff;
-  padding: 16px 0 40px;
+  padding: 24px 0 64px;
 }
 
 .header-inner {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  position: relative;
+  z-index: 1;
 }
 
 .logo {
@@ -112,15 +119,15 @@ button {
   text-transform: lowercase;
 }
 
-.logo-mark {
-  width: 24px;
-  height: 24px;
-  background-color: #f3a623;
-  border-radius: 4px;
+.logo-image {
+  width: 244px;
+  height: 244px;
+  object-fit: contain;
 }
 
 .logo-text {
   letter-spacing: 0.06em;
+  font-size: 1.05rem;
 }
 
 .hero-content {
@@ -155,22 +162,22 @@ h1 {
 
 /* ===== Formulário ===== */
 .hero-form {
-  background-color: #ffffff;
-  color: #0b1630;
-  border-radius: 8px;
-  padding: 20px 16px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.26);
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
 }
 
 .hero-form h2 {
   font-size: 1.2rem;
   margin: 0 0 16px;
+  color: #ffffff;
 }
 
 .lead-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  display: grid;
+  gap: 16px;
 }
 
 .form-group {
@@ -181,13 +188,15 @@ h1 {
 
 .form-group label {
   font-size: 0.85rem;
+  color: #ffffff;
 }
 
 .form-group input {
-  padding: 10px 12px;
+  padding: 12px 14px;
   border-radius: 6px;
-  border: 1px solid #d3d8e6;
-  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+  font-size: 0.95rem;
 }
 
 .form-group input:focus-visible {
@@ -200,6 +209,7 @@ h1 {
   align-items: flex-start;
   gap: 8px;
   font-size: 0.8rem;
+  color: #ffffff;
 }
 
 .form-checkbox input {
@@ -510,7 +520,7 @@ h1 {
 
   .hero-content {
     flex-direction: row;
-    align-items: stretch;
+    align-items: flex-start;
   }
 
   .hero-text {
@@ -520,7 +530,23 @@ h1 {
 
   .hero-form {
     flex: 1;
-    max-width: 360px;
+    max-width: 520px;
+  }
+
+  .lead-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lead-form .form-group:nth-child(3),
+  .lead-form .form-group:nth-child(4),
+  .lead-form .form-checkbox,
+  .lead-form .btn {
+    grid-column: 1 / -1;
+  }
+
+  .lead-form .btn {
+    justify-self: flex-start;
+    min-width: 260px;
   }
 
   .hero-secondary-inner {
