@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meritum - Plataforma de Compliance</title>
   <meta name="description" content="Solução ágil e segura na gestão de processos de compliance. Automatize seu programa de integridade com a plataforma Meritum.">
+  <link rel="preload" as="image" href="assets/imagem-dashboard-meritum-1024x545.png" media="(min-width: 768px)">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="#" class="logo" aria-label="Meritum - Voltar ao início">
-        <img class="logo-image" src="assets/logo-meritum.png" alt="Meritum">
-        
+        <img class="logo-image" src="assets/logo-meritum.png" alt="Meritum" width="140" height="40" decoding="async">
       </a>
 
       <div class="hero-content">
@@ -62,7 +62,7 @@
     <section class="section section-light hero-secondary">
       <div class="container hero-secondary-inner">
         <figure class="illustration">
-          <img src="assets/imagem-dash-2d-analista-site-1024x1024.jpg" alt="Ilustração da plataforma Meritum em telas" loading="lazy">
+          <img src="assets/imagem-dash-2d-analista-site-1024x1024.jpg" alt="Ilustração da plataforma Meritum em telas" loading="lazy" decoding="async" width="1024" height="1024">
         </figure>
         <div class="hero-secondary-text">
           <h2>Esqueça as planilhas, automatize com a Meritum!</h2>
@@ -86,14 +86,7 @@
         </div>
         <div class="video-wrapper" aria-label="Vídeo de apresentação da plataforma">
           <div class="video-embed" data-video-id="l1-B815_WrE">
-            <iframe
-              src=""
-              title="Vídeo de apresentação da plataforma Meritum"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
+            <button class="video-play" type="button" aria-label="Reproduzir vídeo"></button>
           </div>
           <p class="video-fallback">
             Caso o vídeo não carregue, assista direto no
@@ -165,7 +158,7 @@
     <section class="section section-light devices-section">
       <div class="container devices-inner">
         <figure class="devices-figure">
-          <img src="img/plataforma-dispositivos.png" alt="Plataforma Meritum em diversos dispositivos" loading="lazy">
+          <img src="assets/imagem-dashboard-meritum-1024x545.png" alt="Plataforma Meritum em diversos dispositivos" loading="lazy" decoding="async" width="1024" height="545">
         </figure>
         <div class="devices-dots" aria-hidden="true">
           <span class="dot dot-active"></span>
@@ -257,7 +250,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <div class="logo">
-          <img class="logo-image" src="assets/logo-meritum.png" alt="Meritum">
+          <img class="logo-image" src="assets/logo-meritum.png" alt="Meritum" width="140" height="40" decoding="async" loading="lazy">
           <span class="logo-text">meritum</span>
         </div>
         <p>Plataforma de compliance para automatizar a gestão de integridade da sua organização.</p>
@@ -289,20 +282,33 @@
     (() => {
       const embed = document.querySelector('.video-embed');
       if (!embed) return;
-      const iframe = embed.querySelector('iframe');
-      if (!iframe) return;
       const videoId = embed.getAttribute('data-video-id');
       if (!videoId) return;
-      const origin = window.location.origin === 'null' ? '' : window.location.origin;
-      const params = new URLSearchParams({
-        rel: '0',
-        modestbranding: '1',
-        playsinline: '1'
+      embed.style.backgroundImage = `url('https://i.ytimg.com/vi/${videoId}/hqdefault.jpg')`;
+
+      const playButton = embed.querySelector('.video-play');
+      if (!playButton) return;
+
+      playButton.addEventListener('click', () => {
+        const origin = window.location.origin === 'null' ? '' : window.location.origin;
+        const params = new URLSearchParams({
+          rel: '0',
+          modestbranding: '1',
+          playsinline: '1'
+        });
+        if (origin) {
+          params.set('origin', origin);
+        }
+
+        const iframe = document.createElement('iframe');
+        iframe.title = 'Vídeo de apresentação da plataforma Meritum';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        iframe.src = `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
+        embed.innerHTML = '';
+        embed.appendChild(iframe);
       });
-      if (origin) {
-        params.set('origin', origin);
-      }
-      iframe.src = `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
     })();
   </script>
 </body>
