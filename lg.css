@@ -1,0 +1,9 @@
+@media (min-width: 992px) {
+  .hero-content {
+    gap: 40px;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+}
