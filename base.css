@@ -73,6 +73,7 @@ button {
   font-weight: 600;
   text-decoration: none;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  font-size: 20px;
 }
 
 .btn-primary {
@@ -335,7 +336,7 @@ h1 {
   height: 72px;
   border-radius: 50%;
   border: none;
-  background-color: rgba(251, 175, 54, 0.9);
+  background-color: #FBAF36;
   cursor: pointer;
   display: grid;
   place-items: center;
@@ -361,6 +362,23 @@ h1 {
 .video-fallback a {
   color: #0b1630;
   font-weight: 600;
+}
+
+.video-text h2 {
+   font-size: 30px;
+   line-height: 35px;
+}
+
+.video-text-btn {
+  padding: 20px 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+} 
+
+.video-text-btn .btn-secondary {
+ border-radius: 8px;
+
 }
 
 /* ===== Métricas ===== */
