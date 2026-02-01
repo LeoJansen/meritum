@@ -1,5 +1,9 @@
 /* ===== Breakpoint xl (>= 1200px) ===== */
 @media (min-width: 1200px) {
+  /* ===== Reset simples ===== */
+
+  /* ===== Utilitários ===== */
+
   /* ===== Header / Hero ===== */
   .hero-content {
     gap: 56px;
@@ -36,4 +40,20 @@
     padding: 14px 28px;
     font-size: 1rem;
   }
+
+  /* ===== Hero secundário ===== */
+
+  /* ===== Vídeo ===== */
+
+  /* ===== Métricas ===== */
+
+  /* ===== Produtividade ===== */
+
+  /* ===== Soluções ===== */
+
+  /* ===== Certificações ===== */
+
+  /* ===== Confiança ===== */
+
+  /* ===== Footer ===== */
 }

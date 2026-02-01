@@ -1,12 +1,41 @@
 /* ===== Breakpoint lg (>= 992px) ===== */
 @media (min-width: 992px) {
+  /* ===== Reset simples ===== */
+
+  /* ===== Botões ===== */
+
   /* ===== Header / Hero ===== */
   .hero-content {
     gap: 40px;
   }
 
+  
+
   /* ===== Utilitários ===== */
   .section-header h2 {
     font-size: 1.8rem;
   }
+
+  /* ===== Formulário ===== */
+
+  /* ===== Hero secundário ===== */
+
+  .hero-secondary-inner {
+    flex-direction: row;
+    
+  }
+
+  /* ===== Vídeo ===== */
+
+  /* ===== Métricas ===== */
+
+  /* ===== Produtividade ===== */
+
+  /* ===== Soluções ===== */
+
+  /* ===== Certificações ===== */
+
+  /* ===== Confiança ===== */
+
+  /* ===== Footer ===== */
 }

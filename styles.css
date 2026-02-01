@@ -645,10 +645,15 @@ h1 {
 
 /* ===== Layout desktop ===== */
 @media (min-width: 768px) {
+  /* ===== Reset simples ===== */
+
+  /* ===== Utilitários ===== */
   .section {
     padding: 64px 0;
   }
 
+  /* ===== Botões ===== */
+  /* ===== Header / Hero ===== */
   h1 {
     font-size: 2rem;
   }
@@ -672,6 +677,7 @@ h1 {
     padding-right: 32px;
   }
 
+  /* ===== Formulário ===== */
   .hero-form {
     flex: 1;
     max-width: 520px;
@@ -693,6 +699,7 @@ h1 {
     min-width: 260px;
   }
 
+  /* ===== Hero secundário ===== */
   .hero-secondary-inner {
     flex-direction: row;
   }
@@ -709,6 +716,7 @@ h1 {
     justify-content: flex-start;
   }
 
+  /* ===== Vídeo ===== */
   .video-inner {
     flex-direction: row;
     align-items: center;
@@ -722,6 +730,7 @@ h1 {
     flex: 1;
   }
 
+  /* ===== Métricas ===== */
   .metrics-grid-highlight {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -730,10 +739,20 @@ h1 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  /* ===== Produtividade ===== */
+
+  /* ===== Devices ===== */
+
+  /* ===== Soluções ===== */
   .solutions-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* ===== Certificações ===== */
+
+  /* ===== Confiança ===== */
+
+  /* ===== Footer ===== */
   .footer-inner {
     flex-direction: row;
     justify-content: space-between;
@@ -747,20 +766,50 @@ h1 {
 }
 
 @media (min-width: 1024px) {
+  /* ===== Reset simples ===== */
+
+  /* ===== Header / Hero ===== */
   .hero-content {
     gap: 40px;
   }
 
+  /* ===== Botões ===== */
+
+  /* ===== Formulário ===== */
+
+  /* ===== Hero secundário ===== */
+
+  /* ===== Vídeo ===== */
+
+  /* ===== Métricas ===== */
+
+  /* ===== Produtividade ===== */
+
+  /* ===== Devices ===== */
+
+  /* ===== Soluções ===== */
+
+  /* ===== Certificações ===== */
+
+  /* ===== Confiança ===== */
+
+  /* ===== Utilitários ===== */
   .section-header h2 {
     font-size: 1.8rem;
   }
+
+  /* ===== Footer ===== */
 }
 
 @media (min-width: 1280px) {
+  /* ===== Reset simples ===== */
+
+  /* ===== Utilitários ===== */
+
+  /* ===== Header / Hero ===== */
   .hero-content {
     gap: 56px;
   }
-
   h1 {
     font-size: 2.4rem;
   }
@@ -773,6 +822,7 @@ h1 {
     font-size: 1rem;
   }
 
+  /* ===== Formulário ===== */
   .hero-form h2 {
     font-size: 1.4rem;
   }
@@ -786,8 +836,27 @@ h1 {
     gap: 20px;
   }
 
+  /* ===== Botões ===== */
   .btn {
     padding: 14px 28px;
     font-size: 1rem;
   }
+
+  /* ===== Hero secundário ===== */
+
+  /* ===== Vídeo ===== */
+
+  /* ===== Métricas ===== */
+
+  /* ===== Produtividade ===== */
+
+  /* ===== Devices ===== */
+
+  /* ===== Soluções ===== */
+
+  /* ===== Certificações ===== */
+
+  /* ===== Confiança ===== */
+
+  /* ===== Footer ===== */
 }

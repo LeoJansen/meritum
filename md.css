@@ -1,5 +1,8 @@
 /* ===== Breakpoint md (>= 768px) ===== */
 @media (min-width: 768px) {
+  /* ===== Reset simples ===== */
+  /* ===== Botões ===== */
+
   /* ===== Header / Hero ===== */
   .logo {
     justify-content: flex-start;
@@ -7,6 +10,7 @@
     margin: 0;
   }
 
+  /* ===== Utilitários ===== */
   .section {
     padding: 64px 0;
   }
@@ -165,6 +169,10 @@
   .solutions-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  /* ===== Certificações ===== */
+
+  /* ===== Confiança ===== */
 
   /* ===== Footer ===== */
   .footer-inner {
