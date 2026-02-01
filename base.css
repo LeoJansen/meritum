@@ -94,12 +94,14 @@ button {
 /* ===== Header / Hero ===== */
 .site-header {
   background-color: #0b1630;
-  background-image: linear-gradient(rgba(11, 22, 48, 0.92), rgba(11, 22, 48, 0.92));
+  background-image: linear-gradient(rgba(11 22 48 / 0.84), rgba(4 25 73 / 0.98)),
+    url("assets/header-bg.png");
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   color: #ffffff;
-  padding: 24px 0 64px;
+  padding: 2px 0 4px;
+  padding-bottom: 80px;
   min-height: 100vh;
   display: flex;
 }
@@ -107,25 +109,28 @@ button {
 .header-inner {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 14px;
   position: relative;
   z-index: 1;
   flex: 1;
 }
 
 .logo {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
   text-transform: lowercase;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .logo-image {
-  width: 140px;
-  height: 40px;
+  width: 250px;
+  height: 140px;
   object-fit: contain;
 }
 
@@ -137,21 +142,23 @@ button {
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 44px;
   margin: auto 0;
 }
 
 .eyebrow {
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 1.015rem;
   color: #f3a623;
   letter-spacing: 0.1em;
-  margin: 0 0 8px;
+  margin: 0 0 28px;
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 1.816rem;
   margin: 0 0 12px;
+  font-weight: 600;
+  margin-bottom: 40px;
 }
 
 .hero-subtitle {
