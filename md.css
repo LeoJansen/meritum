@@ -37,6 +37,14 @@
     max-width: 520px;
   }
 
+  .hero-note-base {
+    display: none;
+  }
+
+  .hero-note-md {
+    display: inline;
+  }
+
   .lead-form {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

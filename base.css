@@ -11,6 +11,7 @@ body {
   color: #0b1630;
   background-color: #f5f7fb;
   line-height: 1.5;
+  
 }
 
 img {
@@ -40,7 +41,7 @@ button {
 }
 
 .section-accent {
-  background-color: #f3a623;
+  background-color: #FBAF36;
 }
 
 .section-header {
@@ -75,7 +76,7 @@ button {
 }
 
 .btn-primary {
-  background-color: #f3a623;
+  background-color: #FBAF36;
   color: #0b1630;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
 }
@@ -100,7 +101,7 @@ button {
   background-position: left;
   background-repeat: no-repeat;
   color: #ffffff;
-  padding: 2px 0 4px;
+  padding: 2px 3%;
   padding-bottom: 80px;
   min-height: 100vh;
   display: flex;
@@ -149,7 +150,7 @@ button {
 .eyebrow {
   text-transform: uppercase;
   font-size: 1.015rem;
-  color: #f3a623;
+  color: #FBAF36;
   letter-spacing: 0.1em;
   margin: 0 0 28px;
 }
@@ -167,9 +168,19 @@ h1 {
 }
 
 .hero-note {
-  margin: 0;
-  font-size: 0.85rem;
+  margin: 40px 0 0 0;
+  font-size: 1.1rem;
   opacity: 0.9;
+  font-weight: 400;
+  color: #FBAF36;
+}
+
+.hero-note-base {
+  display: inline;
+}
+
+.hero-note-md {
+  display: none;
 }
 
 /* ===== Formulário ===== */
@@ -189,31 +200,37 @@ h1 {
 
 .lead-form {
   display: grid;
-  gap: 16px;
+  gap: 34px;
 }
+
+
 
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 10px;
 }
 
 .form-group label {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: #ffffff;
 }
 
 .form-group input {
-  padding: 12px 14px;
+  padding: 20px 14px;
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: #ffffff;
   font-size: 0.95rem;
 }
 
+.form-group input::placeholder {
+  color: #9aa3b2;
+}
+
 .form-group input:focus-visible {
-  outline: 2px solid #f3a623;
-  border-color: #f3a623;
+  outline: 2px solid #FBAF36;
+  border-color: #FBAF36;
 }
 
 .form-checkbox {
@@ -226,6 +243,10 @@ h1 {
 
 .form-checkbox input {
   margin-top: 3px;
+}
+
+.form-checkbox label {
+  font-size: 16px;
 }
 
 /* ===== Hero secundário ===== */
@@ -258,6 +279,13 @@ h1 {
   margin: 0 0 16px;
   font-size: 0.95rem;
 }
+
+.hero-secondary-btn {
+  padding: 40px 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+} 
 
 /* ===== Vídeo ===== */
 .video-inner {
@@ -307,7 +335,7 @@ h1 {
   height: 72px;
   border-radius: 50%;
   border: none;
-  background-color: rgba(243, 166, 35, 0.9);
+  background-color: rgba(251, 175, 54, 0.9);
   cursor: pointer;
   display: grid;
   place-items: center;
@@ -493,7 +521,7 @@ h1 {
 }
 
 .dot-active {
-  background-color: #f3a623;
+  background-color: #FBAF36;
 }
 
 /* ===== Soluções ===== */
