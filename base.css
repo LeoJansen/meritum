@@ -256,6 +256,10 @@ h1 {
   flex-direction: column;
   gap: 24px;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  padding: 0 3%;
 }
 
 .illustration {
@@ -273,7 +277,7 @@ h1 {
 
 .hero-secondary-text h2 {
   margin: 0 0 12px;
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 .hero-secondary-text p {
@@ -294,6 +298,7 @@ h1 {
   flex-direction: column;
   gap: 24px;
   color: #0b1630;
+  padding: 0 3%;
 }
 
 .video-text h2 {
@@ -503,43 +508,73 @@ h1 {
   font-size: 0.9rem;
 }
 
-/* ===== Devices ===== */
-.devices-section {
-  text-align: center;
+/* ===== Produtividade ===== */
+.productivity-section {
+  background: linear-gradient(135deg, #0b2a4a, #2f5f8f);
+  color: #ffffff;
 }
 
-.devices-inner {
+.productivity-inner {
   display: flex;
   flex-direction: column;
+  gap: 28px;
   align-items: center;
-  gap: 16px;
 }
 
-.devices-figure {
+.productivity-content h2 {
+  margin: 0 0 16px;
+  font-size: 2rem;
+}
+
+.productivity-content p {
+  margin: 0 0 20px;
+  font-size: 1rem;
+}
+
+.productivity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.productivity-list li {
+  position: relative;
+  padding-left: 28px;
+  font-size: 0.95rem;
+}
+
+.productivity-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: #FBAF36;
+  color: #0b1630;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.productivity-cta {
+  margin-top: 24px;
+  display: flex;
+}
+
+.productivity-visual {
   width: 100%;
-  max-width: 760px;
+  max-width: 520px;
 }
 
-.devices-figure img {
+.productivity-visual img {
   width: 100%;
   height: auto;
   object-fit: contain;
-}
-
-.devices-dots {
-  display: flex;
-  gap: 8px;
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #d3d8e6;
-}
-
-.dot-active {
-  background-color: #FBAF36;
 }
 
 /* ===== Soluções ===== */

@@ -1,4 +1,6 @@
+/* ===== Breakpoint md (>= 768px) ===== */
 @media (min-width: 768px) {
+  /* ===== Header / Hero ===== */
   .logo {
     justify-content: flex-start;
     width: auto;
@@ -10,21 +12,38 @@
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
+  }
+
+  .eyebrow {
+    font-size: 1.2rem;
   }
 
   .header-inner {
+    margin:  100px 0 100px 0;
     flex-direction: column;
+    width: 100%;
+  }
+
+  .site-header .container.header-inner {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .hero-content {
     flex-direction: row;
     align-items: flex-start;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
   }
 
   .site-header {
     background-image: linear-gradient(rgba(11, 22, 48, 0.82), rgba(11, 22, 48, 0.82)),
-       url("assets/header-bg.png");
+      url("assets/header-bg.png");
   }
 
   .hero-text {
@@ -45,8 +64,15 @@
     display: inline;
   }
 
+  /* ===== Formulário ===== */
   .lead-form {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-group input {
+    padding: 14px 18px;
+    font-size: 1.05rem;
+    min-height: 46px;
   }
 
   .lead-form .form-group:nth-child(3),
@@ -61,24 +87,39 @@
     min-width: 260px;
   }
 
+  /* ===== Hero secundário ===== */
   .hero-secondary-inner {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
   }
 
-  .hero-secondary-inner > * {
+  .hero-secondary-inner>* {
     flex: 1;
   }
 
   .hero-secondary-text {
+    display: flex;
+    flex-direction: column;
     padding-left: 24px;
+    gap: 21px;
   }
+
+  .hero-secondary-text h2 {
+    margin: 0 0 12px;
+    font-size: 2.5rem;
+  }
+
+  
 
   .illustration {
     justify-content: flex-start;
   }
 
+  /* ===== Vídeo ===== */
   .video-inner {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -90,6 +131,7 @@
     flex: 1;
   }
 
+  /* ===== Métricas ===== */
   .metrics-grid-highlight {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -98,10 +140,33 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  /* ===== Produtividade ===== */
+  .productivity-inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .productivity-content {
+    flex: 1.1;
+  }
+
+  .productivity-visual {
+    flex: 1;
+    max-width: 560px;
+  }
+
+  .productivity-cta {
+    justify-content: flex-start;
+  }
+
+  /* ===== Soluções ===== */
   .solutions-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* ===== Footer ===== */
   .footer-inner {
     flex-direction: row;
     justify-content: space-between;

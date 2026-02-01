@@ -1,4 +1,6 @@
+/* ===== Breakpoint xl (>= 1200px) ===== */
 @media (min-width: 1200px) {
+  /* ===== Header / Hero ===== */
   .hero-content {
     gap: 56px;
   }
@@ -15,6 +17,7 @@
     font-size: 1rem;
   }
 
+  /* ===== Formulário ===== */
   .hero-form h2 {
     font-size: 1.4rem;
   }
@@ -28,6 +31,7 @@
     gap: 20px;
   }
 
+  /* ===== Botões ===== */
   .btn {
     padding: 14px 28px;
     font-size: 1rem;

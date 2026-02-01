@@ -1,8 +1,11 @@
+/* ===== Breakpoint lg (>= 992px) ===== */
 @media (min-width: 992px) {
+  /* ===== Header / Hero ===== */
   .hero-content {
     gap: 40px;
   }
 
+  /* ===== Utilitários ===== */
   .section-header h2 {
     font-size: 1.8rem;
   }
