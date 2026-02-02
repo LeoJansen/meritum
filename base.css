@@ -79,7 +79,7 @@ button {
 
 .btn-primary {
   background-color: #FBAF36;
-  color: #585858;
+  color: #0b1630;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
 }
 
@@ -98,7 +98,7 @@ button {
 .site-header {
   background-color: #0b1630;
   background-image: linear-gradient(rgba(11 22 48 / 0.84), rgba(4 25 73 / 0.98)),
-    url("assets/header-bg.png");
+    url("assets/header-bg-mobile.png");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
