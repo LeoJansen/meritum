@@ -245,34 +245,56 @@
           <h2>Nossas soluções</h2>
         </header>
 
-        <nav class="solutions-tabs" aria-label="Módulos da plataforma">
-          <button class="tab tab-active" type="button">Canal de Denúncias</button>
-          <button class="tab" type="button">Treinamentos</button>
-          <button class="tab" type="button">Automação de Processos</button>
-          <button class="tab" type="button">Gestão de Documentos</button>
+        <nav class="solutions-tabs" role="tablist" aria-label="Módulos da plataforma">
+          <button class="tab tab-active" id="tab-denuncias" role="tab" type="button" aria-selected="true" aria-controls="panel-denuncias" tabindex="0">Canal de Denúncias</button>
+          <button class="tab" id="tab-treinamentos" role="tab" type="button" aria-selected="false" aria-controls="panel-treinamentos" tabindex="-1">Treinamentos</button>
+          <button class="tab" id="tab-automacao" role="tab" type="button" aria-selected="false" aria-controls="panel-automacao" tabindex="-1">Automação de Processos</button>
+          <button class="tab" id="tab-documentos" role="tab" type="button" aria-selected="false" aria-controls="panel-documentos" tabindex="-1">Controle de Documentos</button>
         </nav>
 
-        <p class="solutions-intro">
-          Um lugar seguro para se comunicar, registrar e tratar denúncias. 
-          Qualquer preocupação ou irregularidade pode ser reportada com a confidencialidade que você espera e a rapidez que precisa.
-        </p>
+        <div class="solutions-panels">
+          <div class="solutions-panel is-active" id="panel-denuncias" role="tabpanel" tabindex="0" aria-labelledby="tab-denuncias">
+            <p class="solutions-intro">
+              Um lugar seguro para se comunicar, registrar e tratar denúncias. Aqui, qualquer preocupação ou irregularidade pode ser reportada com a confidencialidade que você espera e a rapidez que você precisa. Porque sabemos que integridade é coisa séria, e queremos ser parte da solução.
+            </p>
+          </div>
+          <div class="solutions-panel" id="panel-treinamentos" role="tabpanel" tabindex="0" aria-labelledby="tab-treinamentos" hidden>
+            <p class="solutions-intro">
+              Treinamentos feitos sob medida para engajar e capacitar! Neste módulo, desenvolvemos e gerenciamos todo o processo de treinamento para garantir que sua equipe esteja alinhada com as melhores práticas de compliance. Acompanhe cada etapa de perto e veja o impacto do aprendizado contínuo na sua empresa.
+            </p>
+          </div>
+          <div class="solutions-panel" id="panel-automacao" role="tabpanel" tabindex="0" aria-labelledby="tab-automacao" hidden>
+            <p class="solutions-intro">
+              Simplifique e ganhe tempo com a automação dos processos de compliance. Nossa ferramenta permite aprovações automáticas, encaminhamento de demandas aos setores corretos, lembretes personalizados e gestão completa de pendências. É menos trabalho manual e mais eficiência para o time de compliance!
+            </p>
+          </div>
+          <div class="solutions-panel" id="panel-documentos" role="tabpanel" tabindex="0" aria-labelledby="tab-documentos" hidden>
+            <p class="solutions-intro">
+              Centralize e organize! Nosso módulo/ferramenta permite o armazenamento seguro dos documentos da empresa, com registros de leitura e aceite. Acompanhe o compliance de perto, garantindo que todos estejam cientes e em linha com os regulamentos.
+            </p>
+          </div>
+        </div>
 
         <h3 class="solutions-more-title">E tem mais...</h3>
 
         <div class="solutions-grid">
           <article class="solution-card">
+            <img class="solution-card-image" src="assets/gestao-normativos.png" alt="Ilustração de gestão de normativos" loading="lazy" decoding="async">
             <h3>Gestão de normativos</h3>
             <p>Gerencie políticas, códigos de conduta e normativos com registro de leitura e aceite.</p>
           </article>
           <article class="solution-card">
+            <img class="solution-card-image" src="assets/form-pesquisa.png" alt="Ilustração de formulário de pesquisa" loading="lazy" decoding="async">
             <h3>Formulário de pesquisa</h3>
             <p>Crie pesquisas customizadas para avaliar percepção de risco e cultura de compliance.</p>
           </article>
           <article class="solution-card">
+            <img class="solution-card-image" src="assets/biblioteca.png" alt="Ilustração de biblioteca online" loading="lazy" decoding="async">
             <h3>Biblioteca online</h3>
             <p>Centralize documentos críticos do programa com controle de acesso e histórico.</p>
           </article>
           <article class="solution-card">
+            <img class="solution-card-image" src="assets/canal-denuncia-oficial.png" alt="Ilustração de mapeamento de riscos" loading="lazy" decoding="async">
             <h3>Mapeamento de riscos</h3>
             <p>Mapeie, classifique e acompanhe riscos com planos de ação estruturados.</p>
           </article>
@@ -376,6 +398,48 @@
         iframe.src = `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
         embed.innerHTML = '';
         embed.appendChild(iframe);
+      });
+    })();
+
+    (() => {
+      const tabList = document.querySelector('.solutions-tabs');
+      if (!tabList) return;
+
+      const tabs = Array.from(tabList.querySelectorAll('[role="tab"]'));
+      const panels = tabs.map((tab) => document.getElementById(tab.getAttribute('aria-controls'))).filter(Boolean);
+
+      const activateTab = (tabToActivate) => {
+        tabs.forEach((tab) => {
+          const isActive = tab === tabToActivate;
+          tab.classList.toggle('tab-active', isActive);
+          tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+          tab.tabIndex = isActive ? 0 : -1;
+        });
+
+        panels.forEach((panel) => {
+          const isActive = panel.id === tabToActivate.getAttribute('aria-controls');
+          panel.classList.toggle('is-active', isActive);
+          panel.hidden = !isActive;
+        });
+      };
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => activateTab(tab));
+        tab.addEventListener('keydown', (event) => {
+          if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+          event.preventDefault();
+          const currentIndex = tabs.indexOf(tab);
+          let nextIndex = currentIndex;
+
+          if (event.key === 'ArrowRight') nextIndex = (currentIndex + 1) % tabs.length;
+          if (event.key === 'ArrowLeft') nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+          if (event.key === 'Home') nextIndex = 0;
+          if (event.key === 'End') nextIndex = tabs.length - 1;
+
+          const nextTab = tabs[nextIndex];
+          activateTab(nextTab);
+          nextTab.focus();
+        });
       });
     })();
   </script>

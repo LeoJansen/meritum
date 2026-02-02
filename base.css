@@ -74,11 +74,12 @@ button {
   text-decoration: none;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
   font-size: 20px;
+  
 }
 
 .btn-primary {
   background-color: #FBAF36;
-  color: #0b1630;
+  color: #585858;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
 }
 
@@ -505,7 +506,8 @@ h1 {
 
 .metrics-note {
   margin: 24px 0 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: #3370B2;
 }
 
 /* ===== Produtividade ===== */
@@ -591,18 +593,35 @@ h1 {
 }
 
 .tab {
-  padding: 8px 12px;
-  border-radius: 999px;
-  border: 1px solid #d3d8e6;
-  background-color: #ffffff;
-  font-size: 0.85rem;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  background-color: #FBAF36;
+  color: #0b1630;
+  font-size: 0.95rem;
   cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .tab-active {
   background-color: #0b1630;
   color: #ffffff;
-  border-color: #0b1630;
+  border-color: transparent;
+}
+
+.tab:hover,
+.tab:focus-visible {
+  transform: translateY(-1px);
+}
+
+.solutions-panels {
+  display: grid;
+  gap: 12px;
+}
+
+.solutions-panel[hidden] {
+  display: none;
 }
 
 .solutions-intro {
@@ -628,11 +647,21 @@ h1 {
   background-color: #f5f7fb;
   border-radius: 8px;
   padding: 16px 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.solution-card-image {
+  width: 130px;
+  height: auto;
+  object-fit: contain;
 }
 
 .solution-card h3 {
   margin: 0 0 8px;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #3370B2;
 }
 
 .solution-card p {
