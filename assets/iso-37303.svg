@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 96" role="img" aria-label="ISO 37303">
+  <rect width="128" height="96" fill="#0F3FA0" rx="10"/>
+  <rect x="18" y="18" width="92" height="60" fill="#0B2A6B" rx="8"/>
+  <text x="64" y="48" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">ISO</text>
+  <text x="64" y="68" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="16" fill="#FFFFFF">37303</text>
+</svg>

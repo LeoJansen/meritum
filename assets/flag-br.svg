@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 96" role="img" aria-label="Bandeira do Brasil">
+  <rect width="128" height="96" fill="#009B3A" rx="8"/>
+  <polygon points="64,10 118,48 64,86 10,48" fill="#FFDF00"/>
+  <circle cx="64" cy="48" r="20" fill="#002776"/>
+  <rect x="36" y="44" width="56" height="8" fill="#FFFFFF" transform="rotate(-12 64 48)"/>
+</svg>

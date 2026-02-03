@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 96" role="img" aria-label="Selo Empresa Pró-Ética">
+  <rect width="128" height="96" fill="#0B1630" rx="10"/>
+  <rect x="18" y="14" width="92" height="68" fill="#111827" rx="8"/>
+  <text x="64" y="36" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="12" fill="#FFFFFF">EMPRESA</text>
+  <text x="64" y="56" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">PRÓ</text>
+  <text x="64" y="74" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="14" fill="#FFFFFF">ÉTICA</text>
+</svg>
