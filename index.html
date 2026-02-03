@@ -6,6 +6,7 @@
   <title>Meritum - Plataforma de Compliance</title>
   <meta name="description" content="Solução ágil e segura na gestão de processos de compliance. Automatize seu programa de integridade com a plataforma Meritum.">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/cropped-favicon-meritum-192x192.png">
+  <link rel="preload" as="image" href="assets/header-bg-mobile.png" media="(max-width: 767px)">
   <link rel="preload" as="image" href="assets/imagem-dashboard-meritum-1024x545.png" media="(min-width: 768px)">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +16,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
   </noscript>
   <link rel="stylesheet" href="base.css">
-  <link rel="stylesheet" href="sm.css" media="(min-width: 576px)">
-  <link rel="stylesheet" href="md.css" media="(min-width: 768px)">
-  <link rel="stylesheet" href="lg.css" media="(min-width: 992px)">
-  <link rel="stylesheet" href="xl.css" media="(min-width: 1200px)">
-  <link rel="stylesheet" href="xxl.css" media="(min-width: 1400px)">
+  <link rel="preload" as="style" href="sm.css" media="(min-width: 576px)" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="md.css" media="(min-width: 768px)" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="lg.css" media="(min-width: 992px)" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="xl.css" media="(min-width: 1200px)" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="xxl.css" media="(min-width: 1400px)" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="sm.css" media="(min-width: 576px)">
+    <link rel="stylesheet" href="md.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="lg.css" media="(min-width: 992px)">
+    <link rel="stylesheet" href="xl.css" media="(min-width: 1200px)">
+    <link rel="stylesheet" href="xxl.css" media="(min-width: 1400px)">
+  </noscript>
 </head>
 <body>
   <header class="site-header">
@@ -316,27 +324,27 @@
 
         <div class="certifications-row">
           <article class="cert-card">
-            <img class="cert-card-image" src="assets/uk.png" alt="Bandeira do Reino Unido" loading="lazy" decoding="async" width="64" height="48">
+            <img class="cert-card-image" src="assets/uk.svg" alt="Bandeira do Reino Unido" loading="lazy" decoding="async" width="64" height="48">
             <p class="cert-card-label">UK Anti-Bribery</p>
           </article>
           <article class="cert-card">
-            <img class="cert-card-image" src="assets/usa.png" alt="Bandeira dos Estados Unidos" loading="lazy" decoding="async" width="64" height="48">
+            <img class="cert-card-image" src="assets/usa.svg" alt="Bandeira dos Estados Unidos" loading="lazy" decoding="async" width="64" height="48">
             <p class="cert-card-label">FCPA</p>
           </article>
           <article class="cert-card">
-            <img class="cert-card-image" src="assets/bra.png" alt="Bandeira do Brasil" loading="lazy" decoding="async" width="64" height="48">
+            <img class="cert-card-image" src="assets/bra.svg" alt="Bandeira do Brasil" loading="lazy" decoding="async" width="64" height="48">
             <p class="cert-card-label">Lei 13.709/2018</p>
           </article>
           <article class="cert-card">
-            <img class="cert-card-image" src="assets/bra.png" alt="Bandeira do Brasil" loading="lazy" decoding="async" width="64" height="48">
+            <img class="cert-card-image" src="assets/bra.svg" alt="Bandeira do Brasil" loading="lazy" decoding="async" width="64" height="48">
             <p class="cert-card-label">Lei Anticorrupção 12.846/13</p>
           </article>
           <article class="cert-card">
-            <img class="cert-card-image" src="assets/unione.png" alt="Bandeira da União Europeia" loading="lazy" decoding="async" width="64" height="48">
+            <img class="cert-card-image" src="assets/unione.svg" alt="Bandeira da União Europeia" loading="lazy" decoding="async" width="64" height="48">
             <p class="cert-card-label">GDPR 2016/679</p>
           </article>
           <article class="cert-card">
-            <img class="cert-card-image" src="assets/pro-etica.png" alt="Selo Empresa Pró-Ética" loading="lazy" decoding="async" width="64" height="48">
+            <img class="cert-card-image" src="assets/pro-etica.svg" alt="Selo Empresa Pró-Ética" loading="lazy" decoding="async" width="64" height="64">
             <p class="cert-card-label">Certificado</p>
           </article>
           <article class="cert-card">
@@ -401,12 +409,15 @@
       if (!embed) return;
       const videoId = embed.getAttribute('data-video-id');
       if (!videoId) return;
-      embed.style.backgroundImage = `url('https://i.ytimg.com/vi/${videoId}/hqdefault.jpg')`;
+
+      const setPoster = () => {
+        embed.style.backgroundImage = `url('https://i.ytimg.com/vi/${videoId}/hqdefault.jpg')`;
+      };
 
       const playButton = embed.querySelector('.video-play');
-      if (!playButton) return;
+      if (!playButton) return;  
 
-      playButton.addEventListener('click', () => {
+      const attachPlayer = () => {
         const origin = window.location.origin === 'null' ? '' : window.location.origin;
         const params = new URLSearchParams({
           rel: '0',
@@ -422,10 +433,27 @@
         iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
         iframe.allowFullscreen = true;
         iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        iframe.loading = 'lazy';
         iframe.src = `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
         embed.innerHTML = '';
         embed.appendChild(iframe);
-      });
+      };
+
+      const handlePlay = () => attachPlayer();
+      playButton.addEventListener('click', handlePlay, { once: true });
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            setPoster();
+            observer.disconnect();
+          });
+        }, { rootMargin: '200px 0px' });
+        observer.observe(embed);
+      } else {
+        setPoster();
+      }
     })();
 
     (() => {

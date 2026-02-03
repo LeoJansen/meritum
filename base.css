@@ -36,6 +36,13 @@ button {
   min-height: 100vh;
 }
 
+@supports (content-visibility: auto) {
+  .section {
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px 800px;
+  }
+}
+
 .section-light {
   background-color: #ffffff;
 }
