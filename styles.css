@@ -357,6 +357,7 @@ h1 {
   width: 80px;
   height: 80px;
   object-fit: contain;
+ 
 }
 
 .metrics-grid {
@@ -417,6 +418,7 @@ h1 {
   width: 60px;
   height: 60px;
   object-fit: contain;
+  filter: brightness(0.9) saturate(0.9);
 }
 
 .metric-icon--highlight {
