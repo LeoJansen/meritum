@@ -30,10 +30,59 @@
   /* ===== Métricas ===== */
 
   /* ===== Produtividade ===== */
+  .productivity-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+  }
+
+  .productivity-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 52%;
+    max-width: 560px;
+  }
+
+  .productivity-visual {
+    flex: 1 1 48%;
+    max-width: 620px;
+  }
+
+  .productivity-visual img {
+    width: 100%;
+    max-width: 620px;
+  }
 
   /* ===== Soluções ===== */
 
   /* ===== Certificações ===== */
+  .certifications-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cert-card {
+    width: 150px;
+    height: 150px;
+    max-width: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .cert-card-label {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+
+  .cert-card-image {
+    margin-left: 0;
+  }
 
   /* ===== Confiança ===== */
 

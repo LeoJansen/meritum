@@ -533,7 +533,8 @@ h1 {
 
 .productivity-content h2 {
   margin: 0 0 16px;
-  font-size: 2rem;
+  font-size: 2.4rem;
+  font-weight: 500;
 }
 
 .productivity-content p {
@@ -684,25 +685,26 @@ h1 {
 
 .certifications-row {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 14px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
   margin-top: 20px;
 }
 
 .cert-card {
-  width: 150px;
+  width: 100%;
+  max-width: 720px;
   min-height: 120px;
   padding: 16px 12px;
   border-radius: 18px;
   background-color: #0b1630;
   color: #ffffff;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  text-align: center;
+  justify-content: flex-start;
+  gap: 16px;
+  text-align: left;
   box-shadow: 0 8px 18px rgba(11, 22, 48, 0.2);
 }
 
@@ -710,11 +712,12 @@ h1 {
   width: 64px;
   height: 64px;
   object-fit: contain;
+  margin-left: 15px;
 }
 
 .cert-card-label {
   margin: 0;
-  font-size: 0.72rem;
+  font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: 0.02em;
   line-height: 1.2;
