@@ -727,6 +727,11 @@ h1 {
   margin-left: 15px;
 }
 
+.cert-card-image--pro-etica {
+  width: 150px;
+  height: 80px;
+}
+
 .cert-card-label {
   margin: 0;
   font-size: 1.05rem;
