@@ -61,27 +61,37 @@
   .certifications-row {
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 12px;
   }
 
   .cert-card {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     max-width: none;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
     text-align: center;
+    padding-top: 16px;
   }
 
   .cert-card-label {
     font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: -0.02em;
+    min-height: 36px;
   }
 
   .cert-card-image {
     margin-left: 0;
+  }
+
+  .cert-card-image--pro-etica {
+    width: 110px;
+    height: 60px;
   }
 
   /* ===== Confiança ===== */
