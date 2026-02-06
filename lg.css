@@ -56,12 +56,28 @@
   }
 
   /* ===== Soluções ===== */
+.solutions-grid {
+  margin: 10% 0;
 
+}
   
   .solution-card-image {
   width: 160px;
 
 }
+
+.solution-card h3 {
+ 
+  font-size: 1.4rem;
+ 
+}
+
+.solution-card p {
+ 
+  font-size: 1.1rem;
+}
+
+
   /* ===== Certificações ===== */
   .certifications-row {
     flex-direction: row;

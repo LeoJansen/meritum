@@ -639,6 +639,7 @@ h1 {
 .solutions-panels {
   display: grid;
   gap: 12px;
+
 }
 
 .solutions-panel[hidden] {
@@ -659,6 +660,7 @@ h1 {
 }
 
 .solutions-grid {
+  margin: 8% 5%;
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
@@ -688,7 +690,7 @@ h1 {
 
 .solution-card h3 {
   margin: 0 0 8px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #3370B2;
 }
