@@ -57,6 +57,11 @@
 
   /* ===== Soluções ===== */
 
+  
+  .solution-card-image {
+  width: 160px;
+
+}
   /* ===== Certificações ===== */
   .certifications-row {
     flex-direction: row;

@@ -668,20 +668,28 @@ h1 {
   background-color: #f5f7fb;
   border-radius: 8px;
   padding: 16px 14px;
-  display: grid;
+  display: flex;
   gap: 10px;
 }
 
 .solution-card-image {
-  width: 130px;
+  width: 140px;
   height: auto;
   object-fit: contain;
 }
 
+.solution-card-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
 .solution-card h3 {
   margin: 0 0 8px;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #3370B2;
 }
 
@@ -792,7 +800,7 @@ h1 {
 }
 
 .footer-list li + li {
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .footer-list a {

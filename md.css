@@ -173,6 +173,11 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .solution-card-image {
+  width: 150px;
+
+}
+
   /* ===== Certificações ===== */
   .certifications-row {
     flex-direction: column;

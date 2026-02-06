@@ -50,12 +50,21 @@
   /* ===== Produtividade ===== */
 
   /* ===== Soluções ===== */
+ .solution-card-image {
+  width: 170px;
 
+}
   /* ===== Certificações ===== */
 
   /* ===== Confiança ===== */
 
   /* ===== Footer ===== */
+
+  .site-footer {
+  
+    padding: 3% 0 0 0;
+
+  }
 
  .footer-columns {
   
