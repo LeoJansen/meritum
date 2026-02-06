@@ -107,17 +107,24 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 5% 5% 0 5%; 
     width: 100%;
     min-height: 80vh;
 
   }
 
+  .site-footer .logo-image {
+    width: auto;
+    height: 110px;
+    opacity: 0.88;
+  }
+
   .footer-inner {
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 28px;
+    justify-content: space-evenly;
     width: 100%;
   }
 
@@ -126,11 +133,12 @@
     flex-direction: row;
     gap: 40px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
   }
 
   .footer-column {
+    height: 100%;
     flex: 1;
     min-width: 200px;
     display: flex;
@@ -140,7 +148,7 @@
   }
 
   .footer-column h3 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     margin-bottom: 12px;
     font-weight: 600;
     text-transform: uppercase;
@@ -149,7 +157,7 @@
   } 
 
   .footer-list {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
   }
 
@@ -173,7 +181,7 @@
 
   .footer-bottom {
     text-align: left;
-    height: 100px;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
