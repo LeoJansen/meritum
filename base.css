@@ -780,12 +780,14 @@ h1 {
 .footer-column h3 {
   margin: 0 0 8px;
   font-size: 0.95rem;
+      color: #2F6FB3;
 }
 
 .footer-list {
   list-style: none;
   padding: 0;
   margin: 0;
+
 }
 
 .footer-list li + li {
@@ -793,11 +795,12 @@ h1 {
 }
 
 .footer-list a {
-  color: #ffffff;
+  color: #858585;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  
 }
 
 .footer-list a:hover {
@@ -810,6 +813,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
 }
 
 .footer-link-icon img {
