@@ -756,8 +756,9 @@ h1 {
   background-color: #0b1630;
   color: #ffffff;
   min-height: 70vh;
-  padding: 56px 0 32px;
+  padding: 0% 5% ;
   font-size: 0.85rem;
+  
 }
 
 .footer-inner {
