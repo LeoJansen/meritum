@@ -57,7 +57,9 @@
 
   /* ===== Footer ===== */
 
-  .site-footer {
-     padding: 5% 10% 0 10%; 
-  } 
+ .footer-columns {
+  
+    padding: 0 15%;
+
+  }
 }

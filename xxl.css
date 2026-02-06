@@ -25,7 +25,9 @@
   /* ===== Confiança ===== */
 
   /* ===== Footer ===== */
-    .site-footer {
-     padding: 5% 20% 0 20%; 
-  } 
+ .footer-columns {
+  
+    padding: 0 20%;
+
+  }
 }
