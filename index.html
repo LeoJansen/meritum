@@ -1,548 +1,625 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meritum - Plataforma de Compliance</title>
-  <meta name="description" content="Solução ágil e segura na gestão de processos de compliance. Automatize seu programa de integridade com a plataforma Meritum.">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/cropped-favicon-meritum-192x192.png">
-  <link rel="preload" as="image" href="assets/header-bg-mobile.png" media="(max-width: 767px)">
-  <link rel="preload" as="image" href="assets/imagem-dashboard-meritum-1024x545.png" media="(min-width: 768px)">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-  </noscript>
-  <link rel="stylesheet" href="base.css">
-  <link rel="preload" as="style" href="sm.css" media="(min-width: 576px)" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" as="style" href="md.css" media="(min-width: 768px)" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" as="style" href="lg.css" media="(min-width: 992px)" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" as="style" href="xl.css" media="(min-width: 1200px)" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" as="style" href="xxl.css" media="(min-width: 1400px)" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="sm.css" media="(min-width: 576px)">
-    <link rel="stylesheet" href="md.css" media="(min-width: 768px)">
-    <link rel="stylesheet" href="lg.css" media="(min-width: 992px)">
-    <link rel="stylesheet" href="xl.css" media="(min-width: 1200px)">
-    <link rel="stylesheet" href="xxl.css" media="(min-width: 1400px)">
-  </noscript>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meritum - Plataforma de Compliance</title>
+    <meta name="description"
+        content="Solução ágil e segura na gestão de processos de compliance. Automatize seu programa de integridade com a plataforma Meritum.">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/cropped-favicon-meritum-192x192.png">
+    <link rel="preload" as="image" href="assets/header-bg-mobile.png" media="(max-width: 767px)">
+    <link rel="preload" as="image" href="assets/imagem-dashboard-meritum-1024x545.png" media="(min-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    </noscript>
+    <link rel="stylesheet" href="base.css">
+    <link rel="preload" as="style" href="sm.css" media="(min-width: 576px)"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="md.css" media="(min-width: 768px)"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="lg.css" media="(min-width: 992px)"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="xl.css" media="(min-width: 1200px)"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="xxl.css" media="(min-width: 1400px)"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="sm.css" media="(min-width: 576px)">
+        <link rel="stylesheet" href="md.css" media="(min-width: 768px)">
+        <link rel="stylesheet" href="lg.css" media="(min-width: 992px)">
+        <link rel="stylesheet" href="xl.css" media="(min-width: 1200px)">
+        <link rel="stylesheet" href="xxl.css" media="(min-width: 1400px)">
+    </noscript>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#" class="logo" aria-label="Meritum - Voltar ao início">
-        <img class="logo-image" src="assets/logo-meritum.png" alt="Meritum" width="140" height="40" decoding="async">
-      </a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo" aria-label="Meritum - Voltar ao início">
+                <img class="logo-image" src="assets/logo-meritum.png" alt="Meritum" width="140" height="40"
+                    decoding="async">
+            </a>
 
-      <div class="hero-content">
-        <div class="hero-text">
-          <p class="eyebrow">Plataforma de Compliance</p>
-          <h1>Solução ágil e segura na gestão de processos de compliance</h1>
-          <p class="hero-subtitle">
-            A Meritum é uma solução versátil que atende a uma ampla variedade de necessidades empresariais. 
-            Seja qual for o desafio que sua empresa enfrente, temos uma solução específica para você.
-          </p>
-          <p class="hero-note">
-            <span class="hero-note-base">Preencha o formulário abaixo e faça um teste grátis!</span>
-            <span class="hero-note-md">Preencha o formulário ao lado e faça um teste grátis!</span>
-          </p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">Plataforma de Compliance</p>
+                    <h1>Solução ágil e segura na gestão de processos de compliance</h1>
+                    <p class="hero-subtitle">
+                        A Meritum é uma solução versátil que atende a uma ampla variedade de necessidades empresariais.
+                        Seja qual for o desafio que sua empresa enfrente, temos uma solução específica para você.
+                    </p>
+                    <p class="hero-note">
+                        <span class="hero-note-base">Preencha o formulário abaixo e faça um teste grátis!</span>
+                        <span class="hero-note-md">Preencha o formulário ao lado e faça um teste grátis!</span>
+                    </p>
+                </div>
+
+                <aside class="hero-form" aria-label="Formulário para solicitar teste grátis">
+                    <form action="https://formsubmit.co/comercial@meritum.online" method="post" class="lead-form">
+                        <div class="form-group">
+                            <input id="nome" name="nome" type="text" placeholder="Nome*" aria-label="Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="telefone" name="telefone" type="tel" placeholder="Telefone com DDD*"
+                                aria-label="Telefone com DDD" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="email" name="email" type="email" placeholder="E-mail corporativo*"
+                                aria-label="E-mail corporativo" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="empresa" name="empresa" type="text" placeholder="Empresa*" aria-label="Empresa"
+                                required>
+                        </div>
+                        <div class="form-checkbox">
+                            <input id="receber-comunicacao" name="c" type="checkbox">
+                            <label for="receber-comunicacao">De acordo em receber comunicação da Meritum </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary " id="header-btn">Solicitar teste grátis</button>
+                    </form>
+                </aside>
+            </div>
         </div>
+    </header>
 
-        <aside class="hero-form" aria-label="Formulário para solicitar teste grátis">
-          <form action="https://formsubmit.co/comercial@meritum.online" method="post" class="lead-form">
-            <div class="form-group">
-              <input id="nome" name="nome" type="text" placeholder="Nome*" aria-label="Nome" required>
-            </div>
-            <div class="form-group">
-              <input id="telefone" name="telefone" type="tel" placeholder="Telefone com DDD*" aria-label="Telefone com DDD" required>
-            </div>
-            <div class="form-group">
-              <input id="email" name="email" type="email" placeholder="E-mail corporativo*" aria-label="E-mail corporativo" required>
-            </div>
-            <div class="form-group">
-              <input id="empresa" name="empresa" type="text" placeholder="Empresa*" aria-label="Empresa" required>
-            </div>
-            <div class="form-checkbox">
-              <input id="receber-comunicacao" name="c" type="checkbox">
-              <label for="receber-comunicacao">De acordo em receber comunicação da Meritum </label>
-            </div>
-            <button type="submit" class="btn btn-primary " id="header-btn">Solicitar teste grátis</button>
-          </form>
-        </aside>
-      </div>
-    </div>
-  </header>
+    <main>
+        <section class="section section-light hero-secondary">
+            <div class="container hero-secondary-inner">
+                <figure class="illustration">
+                    <img src="assets/imagem-dash-2d-analista-site-1024x1024.jpg"
+                        alt="Ilustração da plataforma Meritum em telas" loading="lazy" decoding="async" width="1024"
+                        height="1024">
+                </figure>
+                <div class="hero-secondary-text">
+                    <h2>Esqueça as planilhas, automatize com a Meritum!</h2>
+                    <p>
+                        Com a Meritum, monitore o status de conformidade em tempo real, gere relatórios automáticos e
+                        tome decisões
+                        mais informadas.
+                        Junte-se a centenas de empresas que já aumentaram a eficiência e garantiram a conformidade
+                        regulatória com
+                        nossa plataforma.
+                    </p>
+                    <div class="hero-secondary-btn">
+                        <button class="btn btn-secondary">Agende uma demonstração</button>
+                    </div>
 
-  <main>
-    <section class="section section-light hero-secondary">
-      <div class="container hero-secondary-inner">
-        <figure class="illustration">
-          <img src="assets/imagem-dash-2d-analista-site-1024x1024.jpg" alt="Ilustração da plataforma Meritum em telas" loading="lazy" decoding="async" width="1024" height="1024">
-        </figure>
-        <div class="hero-secondary-text">
-          <h2>Esqueça as planilhas, automatize com a Meritum!</h2>
-          <p>
-            Com a Meritum, monitore o status de conformidade em tempo real, gere relatórios automáticos e tome decisões mais informadas. 
-            Junte-se a centenas de empresas que já aumentaram a eficiência e garantiram a conformidade regulatória com nossa plataforma.
-          </p>
-          <div class="hero-secondary-btn">
-            <button class="btn btn-secondary">Agende uma demonstração</button>
-          </div>
-          
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-accent video-section">
+            <div class="container video-inner">
+                <div class="video-text">
+                    <h2>Conheça nossa plataforma e descubra como podemos ajudá-lo a alcançar seus objetivos.</h2>
+                    <p>
+                        Oferecemos soluções personalizadas e eficientes para facilitar seu dia a dia e impulsionar seu
+                        sucesso.
+                    </p>
+
+
+                </div>
+                <div class="video-wrapper" aria-label="Vídeo de apresentação da plataforma">
+                    <div class="video-embed" data-video-id="l1-B815_WrE">
+                        <button class="video-play" type="button" aria-label="Reproduzir vídeo"></button>
+                    </div>
+                    <p class="video-fallback">
+                        Caso o vídeo não carregue, assista direto no
+                        <a href="https://youtu.be/l1-B815_WrE" target="_blank" rel="noopener">YouTube</a>.
+                    </p>
+                </div>
+                <div class="video-text-btn">
+                    <button class="btn btn-secondary">Agende uma demonstração</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light metrics-section">
+            <div class="container">
+                <header class="section-header metrics-header">
+                    <span class="metrics-header-icon" aria-hidden="true">
+                        <img src="assets/trophy.png" alt="" loading="lazy" decoding="async" width="80" height="80">
+                    </span>
+                    <h2>Somos uma das maiores plataformas Brasileira de compliance!</h2>
+                </header>
+
+                <div class="metrics-grid metrics-grid-highlight">
+                    <article class="metric-card metric-card--highlight">
+                        <span class="metric-icon metric-icon--highlight" aria-hidden="true">
+                            <img src="assets/empresas.png" alt="" loading="lazy" decoding="async" width="60"
+                                height="60">
+                        </span>
+                        <div class="metric-content">
+                            <h3>+ de 100 Empresas</h3>
+                        </div>
+                    </article>
+                    <article class="metric-card metric-card--highlight">
+                        <span class="metric-icon metric-icon--highlight" aria-hidden="true">
+                            <img src="assets/globe.png" alt="" loading="lazy" decoding="async" width="60" height="60">
+                        </span>
+                        <div class="metric-content">
+                            <h3>18 Países</h3>
+                        </div>
+                    </article>
+                    <article class="metric-card metric-card--highlight">
+                        <span class="metric-icon metric-icon--highlight" aria-hidden="true">
+                            <img src="assets/multilanguage.png" alt="" loading="lazy" decoding="async" width="60"
+                                height="60">
+                        </span>
+                        <div class="metric-content">
+                            <h3>3 Idiomas</h3>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="metrics-grid">
+                    <article class="metric-card metric-card--standard">
+                        <span class="metric-icon" aria-hidden="true">
+                            <img src="assets/networking.png" alt="" loading="lazy" decoding="async" width="60"
+                                height="60">
+                        </span>
+                        <div class="metric-content">
+                            <h3>200.000</h3>
+                            <p>+ de 200mil usuários sob gestão</p>
+                        </div>
+                    </article>
+                    <article class="metric-card metric-card--standard">
+                        <span class="metric-icon" aria-hidden="true">
+                            <img src="assets/online-learning.png" alt="" loading="lazy" decoding="async" width="60"
+                                height="60">
+                        </span>
+                        <div class="metric-content">
+                            <h3>600.000</h3>
+                            <p>Treinamentos aplicados</p>
+                        </div>
+                    </article>
+                    <article class="metric-card metric-card--standard">
+                        <span class="metric-icon" aria-hidden="true">
+                            <img src="assets/security.png" alt="" loading="lazy" decoding="async" width="60"
+                                height="60">
+                        </span>
+                        <div class="metric-content">
+                            <h3>5000</h3>
+                            <p>Empresas monitoradas</p>
+                        </div>
+                    </article>
+                    <article class="metric-card metric-card--standard">
+                        <span class="metric-icon" aria-hidden="true">
+                            <img src="assets/insurance-policy.png" alt="" loading="lazy" decoding="async" width="60"
+                                height="60">
+                        </span>
+                        <div class="metric-content">
+                            <h3>100.000</h3>
+                            <p>Políticas e normas em monitoramento</p>
+                        </div>
+                    </article>
+                    <article class="metric-card metric-card--standard">
+                        <span class="metric-icon" aria-hidden="true">
+                            <img src="assets/process.png" alt="" loading="lazy" decoding="async" width="60" height="60">
+                        </span>
+                        <div class="metric-content">
+                            <h3>700.000</h3>
+                            <p>+ 700 mil processos internos monitorados</p>
+                        </div>
+                    </article>
+                    <article class="metric-card metric-card--standard">
+                        <span class="metric-icon" aria-hidden="true">
+                            <img src="assets/complaint.png" alt="" loading="lazy" decoding="async" width="60"
+                                height="60">
+                        </span>
+                        <div class="metric-content">
+                            <h3>3000</h3>
+                            <p>Denúncias tratadas</p>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="metrics-note">
+                    A Meritum é uma solução versátil que atende a uma ampla variedade de necessidades empresariais.
+                    Seja qual for o desafio que sua empresa enfrente temos uma solução específica para você.
+                </p>
+
+                <div class="section-cta">
+                    <button class="btn btn-primary">Agende uma demonstração</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section productivity-section">
+            <div class="container productivity-inner">
+                <div class="productivity-content">
+                    <h2>Produtividade</h2>
+                    <p>
+                        Sabemos da responsabilidade de gerenciar e monitorar um programa de compliance de forma
+                        contínua.
+                        É por isso que nossos esforços estão voltados para soluções que auxiliem principalmente os
+                        gestores,
+                        pessoas que lidam com o programa em seu dia a dia. Conheça algumas vantagens para o seu time.
+                    </p>
+                    <ul class="productivity-list">
+                        <li>Utilize a plataforma de onde estiver</li>
+                        <li>Relatórios a um clique de distância</li>
+                        <li>Alertas e cobranças configuráveis</li>
+                        <li>Automação baseada em regras de políticas e normas</li>
+                    </ul>
+                    <div class="productivity-cta">
+                        <button class="btn btn-primary">Agende uma demonstração</button>
+                    </div>
+                </div>
+                <figure class="productivity-visual">
+                    <img src="assets/imagem-dashboard-meritum-1024x545.png"
+                        alt="Plataforma Meritum em diversos dispositivos" loading="lazy" decoding="async" width="1024"
+                        height="545">
+                </figure>
+            </div>
+        </section>
+
+        <section class="section section-solutions">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Nossas soluções</h2>
+                </header>
+
+                <nav class="solutions-tabs" role="tablist" aria-label="Módulos da plataforma">
+                    <button class="tab tab-active" id="tab-denuncias" role="tab" type="button" aria-selected="true"
+                        aria-controls="panel-denuncias" tabindex="0">Canal de Denúncias</button>
+                    <button class="tab" id="tab-treinamentos" role="tab" type="button" aria-selected="false"
+                        aria-controls="panel-treinamentos" tabindex="-1">Treinamentos</button>
+                    <button class="tab" id="tab-automacao" role="tab" type="button" aria-selected="false"
+                        aria-controls="panel-automacao" tabindex="-1">Automação de Processos</button>
+                    <button class="tab" id="tab-documentos" role="tab" type="button" aria-selected="false"
+                        aria-controls="panel-documentos" tabindex="-1">Controle de Documentos</button>
+                </nav>
+
+                <div class="solutions-panels">
+                    <div class="solutions-panel is-active" id="panel-denuncias" role="tabpanel" tabindex="0"
+                        aria-labelledby="tab-denuncias">
+                        <p class="solutions-intro">
+                            Um lugar seguro para se comunicar, registrar e tratar denúncias. Aqui, qualquer preocupação
+                            ou
+                            irregularidade pode ser reportada com a confidencialidade que você espera e a rapidez que
+                            você precisa.
+                            Porque sabemos que integridade é coisa séria, e queremos ser parte da solução.
+                        </p>
+                    </div>
+                    <div class="solutions-panel" id="panel-treinamentos" role="tabpanel" tabindex="0"
+                        aria-labelledby="tab-treinamentos" hidden>
+                        <p class="solutions-intro">
+                            Treinamentos feitos sob medida para engajar e capacitar! Neste módulo, desenvolvemos e
+                            gerenciamos todo o
+                            processo de treinamento para garantir que sua equipe esteja alinhada com as melhores
+                            práticas de
+                            compliance. Acompanhe cada etapa de perto e veja o impacto do aprendizado contínuo na sua
+                            empresa.
+                        </p>
+                    </div>
+                    <div class="solutions-panel" id="panel-automacao" role="tabpanel" tabindex="0"
+                        aria-labelledby="tab-automacao" hidden>
+                        <p class="solutions-intro">
+                            Simplifique e ganhe tempo com a automação dos processos de compliance. Nossa ferramenta
+                            permite aprovações
+                            automáticas, encaminhamento de demandas aos setores corretos, lembretes personalizados e
+                            gestão completa
+                            de pendências. É menos trabalho manual e mais eficiência para o time de compliance!
+                        </p>
+                    </div>
+                    <div class="solutions-panel" id="panel-documentos" role="tabpanel" tabindex="0"
+                        aria-labelledby="tab-documentos" hidden>
+                        <p class="solutions-intro">
+                            Centralize e organize! Nosso módulo/ferramenta permite o armazenamento seguro dos documentos
+                            da empresa,
+                            com registros de leitura e aceite. Acompanhe o compliance de perto, garantindo que todos
+                            estejam cientes e
+                            em linha com os regulamentos.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="solutions-more-title">E tem mais...</h3>
+
+                <div class="solutions-grid">
+                    <article class="solution-card">
+                        <img class="solution-card-image" src="assets/gestao-normativos.png"
+                            alt="Ilustração de gestão de normativos" loading="lazy" decoding="async" width="130"
+                            height="130">
+                        <div class="solution-card-text">
+                            <h3>Gestão de normativos</h3>
+                            <p>Gerencie políticas, códigos de conduta e normativos com registro de leitura e aceite.</p>
+
+                        </div>
+
+                    </article>
+                    <article class="solution-card">
+                        <img class="solution-card-image" src="assets/form-pesquisa.png"
+                            alt="Ilustração de formulário de pesquisa" loading="lazy" decoding="async" width="130"
+                            height="130">
+                        <div class="solution-card-text">
+                            <h3>Pesquisas customizadas</h3>
+                            <p>Crie pesquisas customizadas para avaliar percepção de risco e cultura de compliance.</p>
+                        </div>
+                    </article>
+                    <article class="solution-card">
+                        <img class="solution-card-image" src="assets/biblioteca.png"
+                            alt="Ilustração de biblioteca online" loading="lazy" decoding="async" width="130"
+                            height="130">
+                        <div class="solution-card-text">
+                            <h3>Biblioteca online</h3>
+                            <p>Centralize documentos críticos do programa com controle de acesso e histórico.</p>
+                        </div>
+                    </article>
+                    <article class="solution-card">
+                        <img class="solution-card-image" src="assets/canal-denuncia-oficial.png"
+                            alt="Ilustração de mapeamento de riscos" loading="lazy" decoding="async" width="130"
+                            height="130">
+                        <div class="solution-card-text">
+                            <h3>Mapeamento de riscos</h3>
+                            <p>Mapeie, classifique e acompanhe riscos com planos de ação estruturados.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-cta">
+                    <button class="btn btn-primary">Agende uma demonstração</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light compliance-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>A Meritum auxilia na aderência às certificações e leis abaixo</h2>
+                </header>
+
+                <div class="certifications-row">
+                    <article class="cert-card">
+                        <img class="cert-card-image" src="assets/uk.svg" alt="Bandeira do Reino Unido" loading="lazy"
+                            decoding="async" width="64" height="48">
+                        <p class="cert-card-label">UK Anti-Bribery</p>
+                    </article>
+                    <article class="cert-card">
+                        <img class="cert-card-image" src="assets/usa.svg" alt="Bandeira dos Estados Unidos"
+                            loading="lazy" decoding="async" width="64" height="48">
+                        <p class="cert-card-label">FCPA</p>
+                    </article>
+                    <article class="cert-card">
+                        <img class="cert-card-image" src="assets/bras.svg" alt="Bandeira do Brasil" loading="lazy"
+                            decoding="async" width="64" height="48">
+                        <p class="cert-card-label">Lei 13.709/2018</p>
+                    </article>
+                    <article class="cert-card">
+                        <img class="cert-card-image" src="assets/bras.svg" alt="Bandeira do Brasil" loading="lazy"
+                            decoding="async" width="64" height="48">
+                        <p class="cert-card-label">Lei Anticorrupção 12.846/13</p>
+                    </article>
+                    <article class="cert-card">
+                        <img class="cert-card-image" src="assets/ue.svg" alt="Bandeira da União Europeia" loading="lazy"
+                            decoding="async" width="64" height="48">
+                        <p class="cert-card-label">GDPR 2016/679</p>
+                    </article>
+                    <article class="cert-card">
+                        <img class="cert-card-image cert-card-image--pro-etica" src="assets/pro-etica.svg"
+                            alt="Selo Empresa Pró-Ética" loading="lazy" decoding="async" width="80" height="80">
+                        <p class="cert-card-label">Certificado</p>
+                    </article>
+                    <article class="cert-card">
+                        <img class="cert-card-image" src="assets/iso.svg" alt="ISO 37303" loading="lazy"
+                            decoding="async" width="64" height="48">
+                        <p class="cert-card-label">ISO 37303</p>
+                    </article>
+                </div>
+
+                <div class="section-cta">
+                    <button class="btn btn-secondary">Agende uma demonstração</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img class="logo-image" src="assets/logo-meritum.png" alt="Meritum" width="140" height="40"
+                        decoding="async" loading="lazy">
+
+                </div>
+                <p>Plataforma de compliance para automatizar a gestão de integridade da sua organização.</p>
+            </div>
+
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="https://www.meritum.online" target="_blank" rel="noopener">
+                                <span class="footer-link-icon" aria-hidden="true">
+                                    <img src="assets/globe-footer.png" alt="" loading="lazy" decoding="async">
+                                </span>
+                                www.meritum.online
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contato@meritum.online">
+                                <span class="footer-link-icon" aria-hidden="true">
+                                    <img src="assets/e-mail-footer.png" alt="" loading="lazy" decoding="async">
+                                </span>
+                                contato@meritum.online
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/5521975370738" target="_blank" rel="noopener">
+                                <span class="footer-link-icon" aria-hidden="true">
+                                    <img src="assets/whatsapp-footer.png" alt="" loading="lazy" decoding="async">
+                                </span>
+                                +55 21 97537‑0738
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Nossas mídias</h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="https://www.instagram.com/meritumcompliance/" target="_blank" rel="noopener">
+                                <span class="footer-link-icon" aria-hidden="true">
+                                    <img src="assets/instagram-footer.png" alt="" loading="lazy" decoding="async">
+                                </span>
+                                @meritumcompliance
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/meritum-compliance-tool" target="_blank"
+                                rel="noopener">
+                                <span class="footer-link-icon" aria-hidden="true">
+                                    <img src="assets/linkedin-footer.png" alt="" loading="lazy" decoding="async">
+                                </span>
+                                LinkedIn Meritum Compliance
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@meritumcompliance1733" target="_blank" rel="noopener">
+                                <span class="footer-link-icon" aria-hidden="true">
+                                    <img src="assets/youtube-footer.png" alt="" loading="lazy" decoding="async">
+                                </span>
+                                @meritumcompliance
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section section-accent video-section">
-      <div class="container video-inner">
-        <div class="video-text">
-          <h2>Conheça nossa plataforma e descubra como podemos ajudá-lo a alcançar seus objetivos.</h2>
-          <p>
-            Oferecemos soluções personalizadas e eficientes para facilitar seu dia a dia e impulsionar seu sucesso.
-          </p>
-       
-          
+        <div class="footer-bottom">
+            <p>© Meritum 2026 | Todos os direitos reservados.</p>
         </div>
-        <div class="video-wrapper" aria-label="Vídeo de apresentação da plataforma">
-          <div class="video-embed" data-video-id="l1-B815_WrE">
-            <button class="video-play" type="button" aria-label="Reproduzir vídeo"></button>
-          </div>
-          <p class="video-fallback">
-            Caso o vídeo não carregue, assista direto no
-            <a href="https://youtu.be/l1-B815_WrE" target="_blank" rel="noopener">YouTube</a>.
-          </p>
-        </div>
-           <div class="video-text-btn">
-            <button class="btn btn-secondary">Agende uma demonstração</button>
-          </div>
-      </div>
-    </section>
+    </footer>
+    <a class="whatsapp-float" href="https://wa.me/5521972570738" target="_blank" rel="noopener"
+        aria-label="Fale conosco pelo WhatsApp">
+        <img src="assets/whatsapp-meritum2.svg" alt="WhatsApp" width="28" height="28" loading="eager" decoding="async">
+    </a>
+    <script>
+        (() => {
+            const embed = document.querySelector('.video-embed');
+            if (!embed) return;
+            const videoId = embed.getAttribute('data-video-id');
+            if (!videoId) return;
 
-    <section class="section section-light metrics-section">
-      <div class="container">
-        <header class="section-header metrics-header">
-          <span class="metrics-header-icon" aria-hidden="true">
-            <img src="assets/trophy.png" alt="" loading="lazy" decoding="async" width="80" height="80">
-          </span>
-          <h2>Somos uma das maiores plataformas Brasileira de compliance!</h2>
-        </header>
+            const setPoster = () => {
+                embed.style.backgroundImage = `url('https://i.ytimg.com/vi/${videoId}/hqdefault.jpg')`;
+            };
 
-        <div class="metrics-grid metrics-grid-highlight">
-          <article class="metric-card metric-card--highlight">
-            <span class="metric-icon metric-icon--highlight" aria-hidden="true">
-              <img src="assets/empresas.png" alt="" loading="lazy" decoding="async" width="60" height="60">
-            </span>
-            <div class="metric-content">
-              <h3>+ de 100 Empresas</h3>
-            </div>
-          </article>
-          <article class="metric-card metric-card--highlight">
-            <span class="metric-icon metric-icon--highlight" aria-hidden="true">
-              <img src="assets/globe.png" alt="" loading="lazy" decoding="async" width="60" height="60">
-            </span>
-            <div class="metric-content">
-              <h3>18 Países</h3>
-            </div>
-          </article>
-          <article class="metric-card metric-card--highlight">
-            <span class="metric-icon metric-icon--highlight" aria-hidden="true">
-              <img src="assets/multilanguage.png" alt="" loading="lazy" decoding="async" width="60" height="60">
-            </span>
-            <div class="metric-content">
-              <h3>3 Idiomas</h3>
-            </div>
-          </article>
-        </div>
+            const playButton = embed.querySelector('.video-play');
+            if (!playButton) return;
 
-        <div class="metrics-grid">
-          <article class="metric-card metric-card--standard">
-            <span class="metric-icon" aria-hidden="true">
-              <img src="assets/networking.png" alt="" loading="lazy" decoding="async" width="60" height="60">
-            </span>
-            <div class="metric-content">
-              <h3>200.000</h3>
-              <p>+ de 200mil usuários sob gestão</p>
-            </div>
-          </article>
-          <article class="metric-card metric-card--standard">
-            <span class="metric-icon" aria-hidden="true">
-              <img src="assets/online-learning.png" alt="" loading="lazy" decoding="async" width="60" height="60">
-            </span>
-            <div class="metric-content">
-              <h3>600.000</h3>
-              <p>Treinamentos aplicados</p>
-            </div>
-          </article>
-          <article class="metric-card metric-card--standard">
-            <span class="metric-icon" aria-hidden="true">
-              <img src="assets/security.png" alt="" loading="lazy" decoding="async" width="60" height="60">
-            </span>
-            <div class="metric-content">
-              <h3>5000</h3>
-              <p>Empresas monitoradas</p>
-            </div>
-          </article>
-          <article class="metric-card metric-card--standard">
-            <span class="metric-icon" aria-hidden="true">
-              <img src="assets/insurance-policy.png" alt="" loading="lazy" decoding="async" width="60" height="60">
-            </span>
-            <div class="metric-content">
-              <h3>100.000</h3>
-              <p>Políticas e normas em monitoramento</p>
-            </div>
-          </article>
-          <article class="metric-card metric-card--standard">
-            <span class="metric-icon" aria-hidden="true">
-              <img src="assets/process.png" alt="" loading="lazy" decoding="async" width="60" height="60">
-            </span>
-            <div class="metric-content">
-              <h3>700.000</h3>
-              <p>+ 700 mil processos internos monitorados</p>
-            </div>
-          </article>
-          <article class="metric-card metric-card--standard">
-            <span class="metric-icon" aria-hidden="true">
-              <img src="assets/complaint.png" alt="" loading="lazy" decoding="async" width="60" height="60">
-            </span>
-            <div class="metric-content">
-              <h3>3000</h3>
-              <p>Denúncias tratadas</p>
-            </div>
-          </article>
-        </div>
+            const attachPlayer = () => {
+                const origin = window.location.origin === 'null' ? '' : window.location.origin;
+                const params = new URLSearchParams({
+                    rel: '0',
+                    modestbranding: '1',
+                    playsinline: '1'
+                });
+                if (origin) {
+                    params.set('origin', origin);
+                }
 
-        <p class="metrics-note">
-          A Meritum é uma solução versátil que atende a uma ampla variedade de necessidades empresariais. 
-          Seja qual for o desafio que sua empresa enfrente temos uma solução específica para você.
-        </p>
+                const iframe = document.createElement('iframe');
+                iframe.title = 'Vídeo de apresentação da plataforma Meritum';
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+                iframe.allowFullscreen = true;
+                iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+                iframe.loading = 'lazy';
+                iframe.src = `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
+                embed.innerHTML = '';
+                embed.appendChild(iframe);
+            };
 
-        <div class="section-cta">
-          <button class="btn btn-primary">Agende uma demonstração</button>
-        </div>
-      </div>
-    </section>
+            const handlePlay = () => attachPlayer();
+            playButton.addEventListener('click', handlePlay, { once: true });
 
-    <section class="section productivity-section">
-      <div class="container productivity-inner">
-        <div class="productivity-content">
-          <h2>Produtividade</h2>
-          <p>
-            Sabemos da responsabilidade de gerenciar e monitorar um programa de compliance de forma contínua. 
-            É por isso que nossos esforços estão voltados para soluções que auxiliem principalmente os gestores, 
-            pessoas que lidam com o programa em seu dia a dia. Conheça algumas vantagens para o seu time.
-          </p>
-          <ul class="productivity-list">
-            <li>Utilize a plataforma de onde estiver</li>
-            <li>Relatórios a um clique de distância</li>
-            <li>Alertas e cobranças configuráveis</li>
-            <li>Automação baseada em regras de políticas e normas</li>
-          </ul>
-          <div class="productivity-cta">
-            <button class="btn btn-primary">Agende uma demonstração</button>
-          </div>
-        </div>
-        <figure class="productivity-visual">
-          <img src="assets/imagem-dashboard-meritum-1024x545.png" alt="Plataforma Meritum em diversos dispositivos" loading="lazy" decoding="async" width="1024" height="545">
-        </figure>
-      </div>
-    </section>
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (!entry.isIntersecting) return;
+                        setPoster();
+                        observer.disconnect();
+                    });
+                }, { rootMargin: '200px 0px' });
+                observer.observe(embed);
+            } else {
+                setPoster();
+            }
+        })();
 
-    <section class="section section-solutions">
-      <div class="container">
-        <header class="section-header">
-          <h2>Nossas soluções</h2>
-        </header>
+        (() => {
+            const tabList = document.querySelector('.solutions-tabs');
+            if (!tabList) return;
 
-        <nav class="solutions-tabs" role="tablist" aria-label="Módulos da plataforma">
-          <button class="tab tab-active" id="tab-denuncias" role="tab" type="button" aria-selected="true" aria-controls="panel-denuncias" tabindex="0">Canal de Denúncias</button>
-          <button class="tab" id="tab-treinamentos" role="tab" type="button" aria-selected="false" aria-controls="panel-treinamentos" tabindex="-1">Treinamentos</button>
-          <button class="tab" id="tab-automacao" role="tab" type="button" aria-selected="false" aria-controls="panel-automacao" tabindex="-1">Automação de Processos</button>
-          <button class="tab" id="tab-documentos" role="tab" type="button" aria-selected="false" aria-controls="panel-documentos" tabindex="-1">Controle de Documentos</button>
-        </nav>
+            const tabs = Array.from(tabList.querySelectorAll('[role="tab"]'));
+            const panels = tabs.map((tab) => document.getElementById(tab.getAttribute('aria-controls'))).filter(Boolean);
 
-        <div class="solutions-panels">
-          <div class="solutions-panel is-active" id="panel-denuncias" role="tabpanel" tabindex="0" aria-labelledby="tab-denuncias">
-            <p class="solutions-intro">
-              Um lugar seguro para se comunicar, registrar e tratar denúncias. Aqui, qualquer preocupação ou irregularidade pode ser reportada com a confidencialidade que você espera e a rapidez que você precisa. Porque sabemos que integridade é coisa séria, e queremos ser parte da solução.
-            </p>
-          </div>
-          <div class="solutions-panel" id="panel-treinamentos" role="tabpanel" tabindex="0" aria-labelledby="tab-treinamentos" hidden>
-            <p class="solutions-intro">
-              Treinamentos feitos sob medida para engajar e capacitar! Neste módulo, desenvolvemos e gerenciamos todo o processo de treinamento para garantir que sua equipe esteja alinhada com as melhores práticas de compliance. Acompanhe cada etapa de perto e veja o impacto do aprendizado contínuo na sua empresa.
-            </p>
-          </div>
-          <div class="solutions-panel" id="panel-automacao" role="tabpanel" tabindex="0" aria-labelledby="tab-automacao" hidden>
-            <p class="solutions-intro">
-              Simplifique e ganhe tempo com a automação dos processos de compliance. Nossa ferramenta permite aprovações automáticas, encaminhamento de demandas aos setores corretos, lembretes personalizados e gestão completa de pendências. É menos trabalho manual e mais eficiência para o time de compliance!
-            </p>
-          </div>
-          <div class="solutions-panel" id="panel-documentos" role="tabpanel" tabindex="0" aria-labelledby="tab-documentos" hidden>
-            <p class="solutions-intro">
-              Centralize e organize! Nosso módulo/ferramenta permite o armazenamento seguro dos documentos da empresa, com registros de leitura e aceite. Acompanhe o compliance de perto, garantindo que todos estejam cientes e em linha com os regulamentos.
-            </p>
-          </div>
-        </div>
+            const activateTab = (tabToActivate) => {
+                tabs.forEach((tab) => {
+                    const isActive = tab === tabToActivate;
+                    tab.classList.toggle('tab-active', isActive);
+                    tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+                    tab.tabIndex = isActive ? 0 : -1;
+                });
 
-        <h3 class="solutions-more-title">E tem mais...</h3>
+                panels.forEach((panel) => {
+                    const isActive = panel.id === tabToActivate.getAttribute('aria-controls');
+                    panel.classList.toggle('is-active', isActive);
+                    panel.hidden = !isActive;
+                });
+            };
 
-        <div class="solutions-grid">
-          <article class="solution-card">
-            <img class="solution-card-image" src="assets/gestao-normativos.png" alt="Ilustração de gestão de normativos" loading="lazy" decoding="async" width="130" height="130">
-            <div class="solution-card-text">
-              <h3>Gestão de normativos</h3>
-            <p>Gerencie políticas, códigos de conduta e normativos com registro de leitura e aceite.</p>
+            tabs.forEach((tab) => {
+                tab.addEventListener('click', () => activateTab(tab));
+                tab.addEventListener('keydown', (event) => {
+                    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+                    event.preventDefault();
+                    const currentIndex = tabs.indexOf(tab);
+                    let nextIndex = currentIndex;
 
-            </div>
-            
-          </article>
-          <article class="solution-card">
-            <img class="solution-card-image" src="assets/form-pesquisa.png" alt="Ilustração de formulário de pesquisa" loading="lazy" decoding="async" width="130" height="130">
-            <div class="solution-card-text">
-              <h3>Pesquisas customizadas</h3>
-            <p>Crie pesquisas customizadas para avaliar percepção de risco e cultura de compliance.</p>
-            </div>
-          </article>
-          <article class="solution-card">
-            <img class="solution-card-image" src="assets/biblioteca.png" alt="Ilustração de biblioteca online" loading="lazy" decoding="async" width="130" height="130">
-            <div class="solution-card-text">
-              <h3>Biblioteca online</h3>
-              <p>Centralize documentos críticos do programa com controle de acesso e histórico.</p>
-            </div>
-          </article>
-          <article class="solution-card">
-            <img class="solution-card-image" src="assets/canal-denuncia-oficial.png" alt="Ilustração de mapeamento de riscos" loading="lazy" decoding="async" width="130" height="130">
-            <div class="solution-card-text">
-              <h3>Mapeamento de riscos</h3>
-              <p>Mapeie, classifique e acompanhe riscos com planos de ação estruturados.</p>
-            </div>
-          </article>
-        </div>
+                    if (event.key === 'ArrowRight') nextIndex = (currentIndex + 1) % tabs.length;
+                    if (event.key === 'ArrowLeft') nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+                    if (event.key === 'Home') nextIndex = 0;
+                    if (event.key === 'End') nextIndex = tabs.length - 1;
 
-        <div class="section-cta">
-          <button class="btn btn-primary">Agende uma demonstração</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light compliance-section">
-      <div class="container">
-        <header class="section-header">
-          <h2>A Meritum auxilia na aderência às certificações e leis abaixo</h2>
-        </header>
-
-        <div class="certifications-row">
-          <article class="cert-card">
-            <img class="cert-card-image" src="assets/uk.svg" alt="Bandeira do Reino Unido" loading="lazy" decoding="async" width="64" height="48">
-            <p class="cert-card-label">UK Anti-Bribery</p>
-          </article>
-          <article class="cert-card">
-            <img class="cert-card-image" src="assets/usa.svg" alt="Bandeira dos Estados Unidos" loading="lazy" decoding="async" width="64" height="48">
-            <p class="cert-card-label">FCPA</p>
-          </article>
-          <article class="cert-card">
-            <img class="cert-card-image" src="assets/bras.svg" alt="Bandeira do Brasil" loading="lazy" decoding="async" width="64" height="48">
-            <p class="cert-card-label">Lei 13.709/2018</p>
-          </article>
-          <article class="cert-card">
-            <img class="cert-card-image" src="assets/bras.svg" alt="Bandeira do Brasil" loading="lazy" decoding="async" width="64" height="48">
-            <p class="cert-card-label">Lei Anticorrupção 12.846/13</p>
-          </article>
-          <article class="cert-card">
-            <img class="cert-card-image" src="assets/ue.svg" alt="Bandeira da União Europeia" loading="lazy" decoding="async" width="64" height="48">
-            <p class="cert-card-label">GDPR 2016/679</p>
-          </article>
-          <article class="cert-card">
-            <img class="cert-card-image cert-card-image--pro-etica" src="assets/pro-etica.svg" alt="Selo Empresa Pró-Ética" loading="lazy" decoding="async" width="80" height="80">
-            <p class="cert-card-label">Certificado</p>
-          </article>
-          <article class="cert-card">
-            <img class="cert-card-image" src="assets/iso.svg" alt="ISO 37303" loading="lazy" decoding="async" width="64" height="48">
-            <p class="cert-card-label">ISO 37303</p>
-          </article>
-        </div>
-
-        <div class="section-cta">
-          <button class="btn btn-secondary">Agende uma demonstração</button>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="logo">
-          <img class="logo-image" src="assets/logo-meritum.png" alt="Meritum" width="140" height="40" decoding="async" loading="lazy">
-
-        </div>
-        <p>Plataforma de compliance para automatizar a gestão de integridade da sua organização.</p>
-      </div>
-
-      <div class="footer-columns">
-        <div class="footer-column">
-          <h3>Contato</h3>
-          <ul class="footer-list">
-            <li>
-              <a href="https://www.meritum.online" target="_blank" rel="noopener">
-                <span class="footer-link-icon" aria-hidden="true">
-                  <img src="assets/globe-footer.png" alt="" loading="lazy" decoding="async">
-                </span>
-                www.meritum.online
-              </a>
-            </li>
-            <li>
-              <a href="mailto:contato@meritum.online">
-                <span class="footer-link-icon" aria-hidden="true">
-                  <img src="assets/e-mail-footer.png" alt="" loading="lazy" decoding="async">
-                </span>
-                contato@meritum.online
-              </a>
-            </li>
-            <li>
-              <a href="https://wa.me/5521975370738" target="_blank" rel="noopener">
-                <span class="footer-link-icon" aria-hidden="true">
-                  <img src="assets/whatsapp-footer.png" alt="" loading="lazy" decoding="async">
-                </span>
-                +55 21 97537‑0738
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Nossas mídias</h3>
-          <ul class="footer-list">
-            <li>
-              <a href="https://www.instagram.com/meritumcompliance/" target="_blank" rel="noopener">
-                <span class="footer-link-icon" aria-hidden="true">
-                  <img src="assets/instagram-footer.png" alt="" loading="lazy" decoding="async">
-                </span>
-                @meritumcompliance
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/meritum-compliance-tool" target="_blank" rel="noopener">
-                <span class="footer-link-icon" aria-hidden="true">
-                  <img src="assets/linkedin-footer.png" alt="" loading="lazy" decoding="async">
-                </span>
-                LinkedIn Meritum Compliance
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@meritumcompliance1733" target="_blank" rel="noopener">
-                <span class="footer-link-icon" aria-hidden="true">
-                  <img src="assets/youtube-footer.png" alt="" loading="lazy" decoding="async">
-                </span>
-                @meritumcompliance
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© Meritum 2026 | Todos os direitos reservados.</p>
-    </div>
-  </footer>
-  <a class="whatsapp-float" href="https://wa.me/5521972570738" target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
-    <img src="assets/whatsapp-meritum2.svg" alt="WhatsApp" width="28" height="28" loading="eager" decoding="async">
-  </a>
-  <script>
-    (() => {
-      const embed = document.querySelector('.video-embed');
-      if (!embed) return;
-      const videoId = embed.getAttribute('data-video-id');
-      if (!videoId) return;
-
-      const setPoster = () => {
-        embed.style.backgroundImage = `url('https://i.ytimg.com/vi/${videoId}/hqdefault.jpg')`;
-      };
-
-      const playButton = embed.querySelector('.video-play');
-      if (!playButton) return;  
-
-      const attachPlayer = () => {
-        const origin = window.location.origin === 'null' ? '' : window.location.origin;
-        const params = new URLSearchParams({
-          rel: '0',
-          modestbranding: '1',
-          playsinline: '1'
-        });
-        if (origin) {
-          params.set('origin', origin);
-        }
-
-        const iframe = document.createElement('iframe');
-        iframe.title = 'Vídeo de apresentação da plataforma Meritum';
-        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-        iframe.allowFullscreen = true;
-        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-        iframe.loading = 'lazy';
-        iframe.src = `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
-        embed.innerHTML = '';
-        embed.appendChild(iframe);
-      };
-
-      const handlePlay = () => attachPlayer();
-      playButton.addEventListener('click', handlePlay, { once: true });
-
-      if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-            setPoster();
-            observer.disconnect();
-          });
-        }, { rootMargin: '200px 0px' });
-        observer.observe(embed);
-      } else {
-        setPoster();
-      }
-    })();
-
-    (() => {
-      const tabList = document.querySelector('.solutions-tabs');
-      if (!tabList) return;
-
-      const tabs = Array.from(tabList.querySelectorAll('[role="tab"]'));
-      const panels = tabs.map((tab) => document.getElementById(tab.getAttribute('aria-controls'))).filter(Boolean);
-
-      const activateTab = (tabToActivate) => {
-        tabs.forEach((tab) => {
-          const isActive = tab === tabToActivate;
-          tab.classList.toggle('tab-active', isActive);
-          tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
-          tab.tabIndex = isActive ? 0 : -1;
-        });
-
-        panels.forEach((panel) => {
-          const isActive = panel.id === tabToActivate.getAttribute('aria-controls');
-          panel.classList.toggle('is-active', isActive);
-          panel.hidden = !isActive;
-        });
-      };
-
-      tabs.forEach((tab) => {
-        tab.addEventListener('click', () => activateTab(tab));
-        tab.addEventListener('keydown', (event) => {
-          if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
-          event.preventDefault();
-          const currentIndex = tabs.indexOf(tab);
-          let nextIndex = currentIndex;
-
-          if (event.key === 'ArrowRight') nextIndex = (currentIndex + 1) % tabs.length;
-          if (event.key === 'ArrowLeft') nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
-          if (event.key === 'Home') nextIndex = 0;
-          if (event.key === 'End') nextIndex = tabs.length - 1;
-
-          const nextTab = tabs[nextIndex];
-          activateTab(nextTab);
-          nextTab.focus();
-        });
-      });
-    })();
-  </script>
+                    const nextTab = tabs[nextIndex];
+                    activateTab(nextTab);
+                    nextTab.focus();
+                });
+            });
+        })();
+    </script>
 </body>
+
 </html>

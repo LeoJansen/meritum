@@ -765,7 +765,7 @@ h1 {
 .site-footer {
   background-color: #0b1630;
   color: #ffffff;
-  min-height: 70vh;
+  min-height: 90vh;
   padding: 0% 5% ;
   font-size: 0.85rem;
   
@@ -773,6 +773,7 @@ h1 {
 
 .footer-inner {
   display: flex;
+  height: 100%;
   flex-direction: column;
   gap: 24px;
 }
