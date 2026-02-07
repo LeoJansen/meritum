@@ -27,13 +27,14 @@
   /* ===== Footer ===== */
 .site-footer {
   
-    padding: 5% 0 0 0;
+
 
   }
 
  .footer-columns {
   
     padding: 0 20%;
+    height: 350px;
 
   }
 }
