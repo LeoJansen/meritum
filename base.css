@@ -766,7 +766,6 @@ h1 {
     background-color: #0b1630;
     color: #ffffff;
     height: 700px;
-    padding: 0% 5%;
     font-size: 0.85rem;
     display: flex;
     flex-direction: column;
@@ -778,6 +777,7 @@ h1 {
     height: 90%;
     flex-direction: column;
     gap: 48px;
+    margin-bottom: 48px;
 }
 .footer-brand {
     display: flex;
@@ -790,6 +790,8 @@ h1 {
 .footer-brand p {
     padding: 0 5%;
     margin: -20px 0 0 0 ;
+    font-size: 1rem;
+    color: #B9B9B9;
    
    
 }
@@ -799,7 +801,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 48px;
+    gap: 36px;
     padding: 0 5%;
     
 }
@@ -831,11 +833,13 @@ h1 {
 }
 
 .footer-list a {
-    color: #858585;
+    color: #949494;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    font-size: 15px;
+    letter-spacing: 0.03em;
 
 }
 
@@ -844,8 +848,8 @@ h1 {
 }
 
 .footer-link-icon {
-    width: 18px;
-    height: 18px;
+    width: 26px;
+    height: 26px;
     display: inline-flex;
     align-items: center;
     justify-content: center;

@@ -187,14 +187,26 @@
   /* ===== Confiança ===== */
 
   /* ===== Footer ===== */
+
+  .site-footer {
+  background-image: url('assets/footer-bg.png');
+   background-repeat: no-repeat;
+   background-position: right bottom;
+       background-size:  auto 30vh;
+  }
   .footer-inner {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    
+
+  }
+
+  .footer-brand p {
+    padding: 0;
+   
   }
 
   .footer-columns {
-    flex-direction: row;
-    gap: 32px;
+  padding: 0 10%;
   }
+
+
 }
