@@ -115,13 +115,17 @@ button {
     padding-bottom: 80px;
     min-height: 100vh;
     display: flex;
+    justify-content: center;
 }
 
 .header-inner {
     display: flex;
     flex-direction: column;
+  
     gap: 14px;
     position: relative;
+    max-width: 1248px;
+    padding: 36px 24px;
     z-index: 1;
     flex: 1;
 }
@@ -266,15 +270,22 @@ h1 {
 }
 
 /* ===== Hero secundário ===== */
+.hero-secondary {
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
 .hero-secondary-inner {
     display: flex;
     flex-direction: column;
     gap: 24px;
     align-items: center;
     width: 100%;
+    max-width: 1248px;
     height: 100%;
-    max-width: none;
-    padding: 0 3%;
+    
+    padding: 0 24px;
 }
 
 .illustration {
@@ -313,7 +324,7 @@ h1 {
     flex-direction: column;
     gap: 24px;
     color: #0b1630;
-    padding: 0 3%;
+    padding: 0 24px;
 }
 
 .video-text h2 {
@@ -404,6 +415,7 @@ h1 {
 /* ===== Métricas ===== */
 .metrics-section {
     text-align: center;
+    padding: 36px 24px;
 }
 
 .metrics-header {
@@ -534,6 +546,7 @@ h1 {
 .productivity-section {
     background: linear-gradient(135deg, #0b2a4a, #2f5f8f);
     color: #ffffff;
+    padding: 48px 24px;
 }
 
 .productivity-inner {
@@ -603,6 +616,7 @@ h1 {
 /* ===== Soluções ===== */
 .section-solutions {
     background-color: #ffffff;
+    padding: 48px 24px;
 }
 
 .solutions-tabs {
@@ -660,14 +674,14 @@ h1 {
 }
 
 .solutions-grid {
-    margin: 8% 5%;
+    margin: 8% 4px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
 }
 
 .solution-card {
-    background-color: #f5f7fb;
+    background-color: #E7E9EE;
     border-radius: 8px;
     padding: 16px 14px;
     display: flex;
@@ -703,6 +717,7 @@ h1 {
 /* ===== Certificações ===== */
 .compliance-section {
     text-align: center;
+    padding: 36px 24px;
 }
 
 .certifications-row {
@@ -710,7 +725,7 @@ h1 {
     flex-direction: column;
     align-items: stretch;
     gap: 16px;
-    margin-top: 20px;
+  
 }
 
 .cert-card {
@@ -779,6 +794,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0 24px;
     gap: 48px;
     
 }
@@ -806,7 +822,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     gap: 2px;
-    padding: 0 5%;
+    padding: 0 12px;
 
     
 }
