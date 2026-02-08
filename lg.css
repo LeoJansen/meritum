@@ -1,243 +1,250 @@
 /* ===== Breakpoint lg (>= 992px) ===== */
+
+
 @media (min-width: 992px) {
-  /* ===== Reset simples ===== */
 
-  /* ===== Botões ===== */
 
-  /* ===== Header / Hero ===== */
-  .hero-content {
-    gap: 40px;
-  }
 
-  .logo-image {
-    width: 384px;
-    height: 216px;
-  }
-  
+    /* ===== Reset simples ===== */
 
-  /* ===== Utilitários ===== */
-  .section-header h2 {
-    font-size: 1.8rem;
-  }
+    /* ===== Botões ===== */
 
-  /* ===== Formulário ===== */
-
-  /* ===== Hero secundário ===== */
-
-  .hero-secondary-inner {
-    flex-direction: row;
+    /* ===== Header / Hero ===== */
     
-  }
+    .hero-content {
+        gap: 40px;
+    }
 
-  /* ===== Vídeo ===== */
-  .video-section {
-   justify-content: center;
-  }
-
-  .video-inner {
-     max-width: 1248px;
-      margin: 0 auto;
-      width: 100%;
-  }
+    .logo-image {
+        width: 384px;
+        height: 216px;
+    }
 
 
-  /* ===== Métricas ===== */
+    /* ===== Utilitários ===== */
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    /* ===== Formulário ===== */
+
+    /* ===== Hero secundário ===== */
+
+    .hero-secondary-inner {
+        flex-direction: row;
+
+    }
+
+    /* ===== Vídeo ===== */
+    .video-section {
+        justify-content: center;
+    }
+
+    .video-inner {
+        max-width: 1248px;
+        margin: 0 auto;
+        width: 100%;
+    }
 
 
-  .metrics-inner {
-    max-width: 1248px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-  
-
-  /* ===== Produtividade ===== */
-  .productivity-inner {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 28px;
-  }
-
-  .productivity-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex: 1 1 52%;
-    max-width: 560px;
-  }
-
-  .productivity-visual {
-    flex: 1 1 48%;
-    max-width: 620px;
-  }
-
-  .productivity-visual img {
-    width: 100%;
-    max-width: 620px;
-  }
+    /* ===== Métricas ===== */
 
 
+    .metrics-inner {
+        max-width: 1248px;
+        margin: 0 auto;
+        justify-content: center;
+    }
 
 
-  /* ===== Soluções ===== */
-.solutions-inner {
-  max-width: 1248px;
-  margin: 0 auto;
-  justify-content: center;
-}
+    /* ===== Produtividade ===== */
 
-.solutions-grid {
-  margin: 10% 0;
-}
-  
-  .solution-card-image {
-  width: 160px;
+    .productivity-inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+    }
 
-}
+    .productivity-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1 1 52%;
+        max-width: 560px;
+    }
 
-.solution-card h3 {
- 
-  font-size: 1.4rem;
- 
-}
+    .productivity-visual {
+        flex: 1 1 48%;
+        max-width: 620px;
+    }
 
-.solution-card p {
- 
-  font-size: 1.1rem;
-}
-
-
-  /* ===== Certificações ===== */
-  .certifications-row {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 12px;
-  }
-
-  .cert-card {
-    width: 140px;
-    height: 140px;
-    max-width: none;
-    padding: 10px 8px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    text-align: center;
-    padding-top: 16px;
-  }
-
-  .cert-card-label {
-    font-size: 0.9rem;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    min-height: 36px;
-  }
-
-  .cert-card-image {
-    margin-left: 0;
-  }
-
-  .cert-card-image--pro-etica {
-    width: 110px;
-    height: 60px;
-  }
-
-  /* ===== Confiança ===== */
-
-  /* ===== Footer ===== */
-  .site-footer {
-    
-    
-   
-    background-size:  auto 40vh;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-   
-    width: 100%;
-
-
-  }
-
-  .site-footer .logo-image {
-    width: auto;
-    height: 110px;
-    opacity: 0.88;
-  }
-
-  .footer-inner {
-   
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 36px;
-
-  }
-
-  .footer-brand {
-    padding: 0 5% ;
-  }
-
-  .footer-brand p {
-    margin-top: 0;
-  }
-
-  .footer-columns {
-    width: 100%;
-    height: 250px;
-    flex-direction: row;
-    gap: 40px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10%;
-
-  }
-
-  .footer-column {
-    height: 100%;
-    flex: 1;
-    min-width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
-
-  .footer-column h3 {
-    font-size: 1.4rem;
-    margin-bottom: 12px;
-  
-  
-
-  } 
-
-  .footer-list {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-
-  .footer-list li + li {
-    margin-top: 18px;
-  }
+    .productivity-visual img {
+        width: 100%;
+        max-width: 620px;
+    }
 
 
 
 
+    /* ===== Soluções ===== */
+    .solutions-inner {
+        max-width: 1248px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .solutions-grid {
+        margin: 10% 0;
+    }
+
+    .solution-card-image {
+        width: 160px;
+
+    }
+
+    .solution-card h3 {
+
+        font-size: 1.4rem;
+
+    }
+
+    .solution-card p {
+
+        font-size: 1.1rem;
+    }
 
 
-  .footer-bottom {
-    text-align: left;
-    height: 90px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+    /* ===== Certificações ===== */
+    .certifications-row {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 12px;
+    }
+
+    .cert-card {
+        width: 140px;
+        height: 140px;
+        max-width: none;
+        padding: 10px 8px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        text-align: center;
+        padding-top: 16px;
+    }
+
+    .cert-card-label {
+        font-size: 0.9rem;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        min-height: 36px;
+    }
+
+    .cert-card-image {
+        margin-left: 0;
+    }
+
+    .cert-card-image--pro-etica {
+        width: 110px;
+        height: 60px;
+    }
+
+    /* ===== Confiança ===== */
+
+    /* ===== Footer ===== */
+    .site-footer {
+
+
+
+        background-size: auto 40vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+
+
+    }
+
+    .site-footer .logo-image {
+        width: auto;
+        height: 110px;
+        opacity: 0.88;
+    }
+
+    .footer-inner {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 36px;
+
+    }
+
+    .footer-brand {
+        padding: 0 5%;
+    }
+
+    .footer-brand p {
+        margin-top: 0;
+    }
+
+    .footer-columns {
+        width: 100%;
+        height: 250px;
+        flex-direction: row;
+        gap: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+
+    }
+
+    .footer-column {
+        height: 100%;
+        flex: 1;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .footer-column h3 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+
+
+
+    }
+
+    .footer-list {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .footer-list li+li {
+        margin-top: 18px;
+    }
+
+
+
+
+
+
+    .footer-bottom {
+        text-align: left;
+        height: 90px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
