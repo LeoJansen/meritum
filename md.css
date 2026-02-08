@@ -167,11 +167,10 @@
         flex: 1;
 
     }
-
-    .video-text h2 {
-
-        font-size: 2.5rem;
-    }
+.video-text h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
 
     .video-text p {
         font-size: 1.2rem;
@@ -192,6 +191,10 @@
     /* ===== Métricas ===== */
     .metrics-grid-highlight {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .metrics-note {
+        font-size: 1.1rem;
     }
 
     .metrics-grid {
@@ -263,7 +266,7 @@
         background-size: auto 30vh;
     }
 
-    .footer-inner {}
+    
 
     .footer-brand p {
         padding: 0;
