@@ -89,8 +89,6 @@ button {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
 }
 
-
-
 .btn-secondary {
     background-color: #0b1630;
     color: #ffffff;
@@ -328,7 +326,7 @@ h1 {
 .video-inner {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 36px;
     color: #0b1630;
     
 }
@@ -550,7 +548,7 @@ h1 {
 
 /* ===== Produtividade ===== */
 .productivity-section {
-    background: linear-gradient(135deg, #0b2a4a, #2f5f8f);
+    background: linear-gradient(135deg, #02274C, #4A91D8);
     color: #ffffff;
     
 }

@@ -1,219 +1,278 @@
 /* ===== Breakpoint md (>= 768px) ===== */
 @media (min-width: 768px) {
-  /* ===== Reset simples ===== */
-  /* ===== Botões ===== */
+    /* ===== Reset simples ===== */
+    /* ===== Botões ===== */
 
-  /* ===== Header / Hero ===== */
-  .logo {
-    justify-content: flex-start;
-    width: auto;
-    margin: 0;
-  }
+    /* ===== Header / Hero ===== */
 
-  /* ===== Utilitários ===== */
-  .section {
-    padding: 64px 48px;
-    
-  }
 
-  h1 {
-    font-size: 1.9rem;
-  }
+    .site-header {
+        background-image: linear-gradient(rgba(11, 22, 48, 0.82), rgba(11, 22, 48, 0.82)),
+            url("assets/imagem-dashboard-meritum-1024x545.png");
+    }
 
-  .eyebrow {
-    font-size: 1.2rem;
-  }
 
-  .header-inner {
-    margin:  100px 0 100px 0;
-    flex-direction: column;
-    width: 100%;
-  }
+    .logo {
+        justify-content: flex-start;
+        width: auto;
+        margin: 0;
+    }
 
-  .site-header .container.header-inner {
-    max-width: none;
-    padding-left: 0;
-    padding-right: 0;
-  }
+    .logo-image {
+        width: 352px;
+        height: 198px;
+    }
 
-  .hero-content {
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 0;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    
-  }
+    .header-inner {
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+    }
 
-  .site-header {
-    background-image: linear-gradient(rgba(11, 22, 48, 0.82), rgba(11, 22, 48, 0.82)),
-      url("assets/imagem-dashboard-meritum-1024x545.png");
-  }
+    .site-header .container.header-inner {
+        max-width: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-  .hero-text {
-    flex: 1.1;
-    padding-right: 32px;
-  }
+    .hero-content {
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 50px 0 0 0;
 
-  .hero-form {
-    flex: 1;
-    max-width: 520px;
-  }
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
 
-  .hero-note-base {
-    display: none;
-  }
+    }
 
-  .hero-note-md {
-    display: inline;
-  }
 
-  /* ===== Formulário ===== */
-  .lead-form {
-    grid-template-columns: 1fr;
-  }
+    .hero-text {
+        height: 100%;
 
-  .form-group input {
-    padding: 14px 18px;
-    font-size: 1.05rem;
-    min-height: 46px;
-    width: 100%;
-  }
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 50%;
+        gap: 4px
+    }
 
-  .lead-form .form-group:nth-child(3),
-  .lead-form .form-group:nth-child(4),
-  .lead-form .form-checkbox,
-  .lead-form .btn {
-    grid-column: 1 / -1;
-  }
+    .hero-text h1 {
+        font-size: 2.1rem;
+    }
 
-  .lead-form .btn {
-    justify-self: flex-start;
-    min-width: 260px;
-  }
+    .hero-text p {
+        font-size: 1.2rem;
+    }
 
-  /* ===== Hero secundário ===== */
-  .hero-secondary-inner {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-  }
+    .hero-form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 520px;
+    }
 
-  .hero-secondary-inner>* {
-    flex: 1;
-  }
+    .hero-note-base {
+        display: none;
+    }
 
-  .hero-secondary-text {
-    display: flex;
-    flex-direction: column;
-    padding-left: 24px;
-    gap: 21px;
-  }
+    .hero-note-md {
+        display: inline;
+    }
 
-  .hero-secondary-text h2 {
-    margin: 0 0 12px;
-    font-size: 2.5rem;
-  }
 
-  
+    /* ===== Utilitários ===== */
+    .section {
+        padding: 64px 48px;
 
-  .illustration {
-    justify-content: flex-start;
-  }
+    }
 
-  /* ===== Vídeo ===== */
-  .video-inner {
-    flex-direction: column;
-    align-items: center;
-  }
+    h1 {
+        font-size: 1.9rem;
+    }
 
-  .video-text {
-    flex: 1;
-    
-  }
-  .video-text h2 {
-    
-    font-size: 2.5rem;
-}
+    .eyebrow {
+        font-size: 1.2rem;
+    }
 
-  .video-wrapper {
-    flex: 1;
-    max-width: 720px;
-    width: 100%;
-    margin: 0 auto;
-  }
 
-  /* ===== Métricas ===== */
-  .metrics-grid-highlight {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 
-  .metrics-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+    /* ===== Formulário ===== */
+    .lead-form {
+        grid-template-columns: 1fr;
+    }
 
-  /* ===== Produtividade ===== */
-  .productivity-inner {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-  }
+    .form-group input {
+        padding: 14px 18px;
+        font-size: 1.05rem;
+        min-height: 46px;
+        width: 100%;
+    }
 
-  .productivity-content {
-    flex: 1.1;
-  }
+    .lead-form .form-group:nth-child(3),
+    .lead-form .form-group:nth-child(4),
+    .lead-form .form-checkbox,
+    .lead-form .btn {
+        grid-column: 1 / -1;
+    }
 
-  .productivity-visual {
-    flex: 1;
-    max-width: 560px;
-  }
+    .lead-form .btn {
+        justify-self: flex-start;
+        min-width: 260px;
+    }
 
-  .productivity-cta {
-    justify-content: flex-start;
-  }
+    /* ===== Hero secundário ===== */
+    .hero-secondary-inner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
 
-  /* ===== Soluções ===== */
-  .solutions-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+    .hero-secondary-inner>* {
+        flex: 1;
+    }
 
-  .solution-card-image {
-  width: 150px;
+    .hero-secondary-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 24px;
+        gap: 21px;
+    }
 
-}
+    .hero-secondary-text h2 {
+        margin: 0 0 12px;
+        font-size: 2.5rem;
+    }
 
-  /* ===== Certificações ===== */
-  .certifications-row {
-    flex-direction: column;
-    align-items: stretch;
-  }
+    .hero-secondary-text p {
+        font-size: 1.2rem;
+    }
 
-  /* ===== Confiança ===== */
 
-  /* ===== Footer ===== */
 
-  .site-footer {
-  background-image: url('assets/footer-bg.png');
-   background-repeat: no-repeat;
-   background-position: right bottom;
-       background-size:  auto 30vh;
-  }
-  .footer-inner {
-    
+    .illustration {
+        justify-content: flex-start;
+    }
 
-  }
+    /* ===== Vídeo ===== */
+    .video-inner {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
 
-  .footer-brand p {
-    padding: 0;
-   
-  }
+    .video-text {
+        flex: 1;
 
-  .footer-columns {
-  padding: 0 10%;
-  }
+    }
+
+    .video-text h2 {
+
+        font-size: 2.5rem;
+    }
+
+    .video-text p {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+
+    .video-fallback {
+     font-size: 1.1rem;
+    }
+
+    .video-wrapper {
+        flex: 1;
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* ===== Métricas ===== */
+    .metrics-grid-highlight {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    /* ===== Produtividade ===== */
+    .productivity-inner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .productivity-content {
+        flex: 1.1;
+    }
+
+    .productivity-content h2 {
+        font-size: 2.6rem;
+    }
+
+    .productivity-content p {
+        font-size: 1.2rem;
+    }
+
+    .productivity-list li {
+        font-size: 1.2rem;
+        padding-left: 40px;
+    }
+
+    .productivity-visual {
+        flex: 1;
+        max-width: 560px;
+    }
+
+    .productivity-cta {
+        justify-content: flex-start;
+    }
+
+    /* ===== Soluções ===== */
+    .solutions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .solution-card-image {
+        width: 150px;
+
+    }
+
+    .solutions-highlight h2 {
+     font-size: 2.4rem;
+    }
+
+    /* ===== Certificações ===== */
+    .certifications-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* ===== Confiança ===== */
+
+    /* ===== Footer ===== */
+
+    .site-footer {
+        background-image: url('assets/footer-bg.png');
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: auto 30vh;
+    }
+
+    .footer-inner {}
+
+    .footer-brand p {
+        padding: 0;
+
+    }
+
+    .footer-columns {
+        padding: 0 10%;
+    }
 
 
 }

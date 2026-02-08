@@ -10,6 +10,11 @@
     /* ===== Botões ===== */
 
     /* ===== Header / Hero ===== */
+    .logo-image {
+        width: 280px;
+        height: 156px;
+    }
+
   .hero-subtitle {
         font-size: 1.0rem;
     }
