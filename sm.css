@@ -1,49 +1,103 @@
 /* ===== Breakpoint sm (>= 576px) ===== */
 @media (min-width: 576px) {
-  /* ===== Reset simples ===== */
+    /* ===== Reset simples ===== */
 
-  /* ===== Utilitários ===== */
-.section {
-    padding: 48px 48px;
-}
+    /* ===== Utilitários ===== */
+    .section {
+        padding: 48px 48px;
+    }
 
-  /* ===== Botões ===== */
+    /* ===== Botões ===== */
 
-  /* ===== Header / Hero ===== */
+    /* ===== Header / Hero ===== */
+  .hero-subtitle {
+        font-size: 1.0rem;
+    }
 
-  /* ===== Formulário ===== */
+    .eyebrow {
+        font-size: 1.21rem;
+    }
+    /* ===== Formulário ===== */
 
-  /* ===== Hero secundário ===== */
-.hero-secondary {
-   padding-top: 48px;
-   padding-bottom: 48px;
-  }
-  /* ===== Vídeo ===== */
-.video-inner {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-  /* ===== Métricas ===== */
-.metrics-section {
-    padding-top: 64px;
-    padding-bottom: 96px;
-  }
-  /* ===== Produtividade ===== */
-  .productivity-section {
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
+    /* ===== Hero secundário ===== */
+    .hero-secondary {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
 
-  .productivity-content {
-    
-    gap: 48px;
-  }
+  
+    /* ===== Vídeo ===== */
+    .video-inner {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
 
-  /* ===== Soluções ===== */
+    /* ===== Métricas ===== */
+    .metrics-section {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
 
-  /* ===== Certificações ===== */
+    /* ===== Produtividade ===== */
+    .productivity-section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
 
-  /* ===== Confiança ===== */
+    .productivity-content {
+        gap: 48px;
+    }
 
-  /* ===== Footer ===== */
+    .productivity-list {
+        gap: 20px;
+    }
+    .productivity-list li::before {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .productivity-list li {
+        font-size: 1.1rem;
+        padding-left: 48px;
+    }
+
+    /* ===== Soluções ===== */
+
+    /* ===== Certificações ===== */
+
+    /* ===== Confiança ===== */
+
+    /* ===== Footer ===== */
+
+    .footer-inner {
+        padding: 0 36px;
+
+
+    }
+
+    .footer-column {
+        height: 215px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+    }
+
+    .footer-list li+li {
+        margin-top: 9px;
+    }
+
+    .footer-list a {
+        font-size: 16px;
+        letter-spacing: 0.03em;
+    }
+
+    .footer-link-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+
+
 }
