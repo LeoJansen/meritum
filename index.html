@@ -41,7 +41,7 @@
 </head>
 
 <body>
-    <header class="site-header">
+    <header class="section site-header">
         <div class="header-inner">
             <a href="#" class="logo" aria-label="Meritum - Voltar ao início">
                 <img class="logo-image" src="assets/logo-meritum.png" alt="Meritum" width="140" height="40"
@@ -117,7 +117,7 @@
         </section>
 
         <section class="section section-accent video-section">
-            <div class="container video-inner">
+            <div class="video-inner">
                 <div class="video-text">
                     <h2>Conheça nossa plataforma e descubra como podemos ajudá-lo a alcançar seus objetivos.</h2>
                     <p>
@@ -284,65 +284,70 @@
 
         <section class="section section-solutions">
             <div class="">
-                <header class="section-header">
-                    <h2>Nossas soluções</h2>
-                </header>
+                <div class="solutions-highlight">
+                    <header >
+                        <h2>Nossas soluções</h2>
+                    </header>
 
-                <nav class="solutions-tabs" role="tablist" aria-label="Módulos da plataforma">
-                    <button class="tab tab-active" id="tab-denuncias" role="tab" type="button" aria-selected="true"
-                        aria-controls="panel-denuncias" tabindex="0">Canal de Denúncias</button>
-                    <button class="tab" id="tab-treinamentos" role="tab" type="button" aria-selected="false"
-                        aria-controls="panel-treinamentos" tabindex="-1">Treinamentos</button>
-                    <button class="tab" id="tab-automacao" role="tab" type="button" aria-selected="false"
-                        aria-controls="panel-automacao" tabindex="-1">Automação de Processos</button>
-                    <button class="tab" id="tab-documentos" role="tab" type="button" aria-selected="false"
-                        aria-controls="panel-documentos" tabindex="-1">Controle de Documentos</button>
-                </nav>
+                    <nav class="solutions-tabs" role="tablist" aria-label="Módulos da plataforma">
+                        <button class="tab tab-active" id="tab-denuncias" role="tab" type="button" aria-selected="true"
+                            aria-controls="panel-denuncias" tabindex="0">Canal de Denúncias</button>
+                        <button class="tab" id="tab-treinamentos" role="tab" type="button" aria-selected="false"
+                            aria-controls="panel-treinamentos" tabindex="-1">Treinamentos</button>
+                        <button class="tab" id="tab-automacao" role="tab" type="button" aria-selected="false"
+                            aria-controls="panel-automacao" tabindex="-1">Automação de Processos</button>
+                        <button class="tab" id="tab-documentos" role="tab" type="button" aria-selected="false"
+                            aria-controls="panel-documentos" tabindex="-1">Controle de Documentos</button>
+                    </nav>
 
-                <div class="solutions-panels">
-                    <div class="solutions-panel is-active" id="panel-denuncias" role="tabpanel" tabindex="0"
-                        aria-labelledby="tab-denuncias">
-                        <p class="solutions-intro">
-                            Um lugar seguro para se comunicar, registrar e tratar denúncias. Aqui, qualquer preocupação
-                            ou
-                            irregularidade pode ser reportada com a confidencialidade que você espera e a rapidez que
-                            você precisa.
-                            Porque sabemos que integridade é coisa séria, e queremos ser parte da solução.
-                        </p>
-                    </div>
-                    <div class="solutions-panel" id="panel-treinamentos" role="tabpanel" tabindex="0"
-                        aria-labelledby="tab-treinamentos" hidden>
-                        <p class="solutions-intro">
-                            Treinamentos feitos sob medida para engajar e capacitar! Neste módulo, desenvolvemos e
-                            gerenciamos todo o
-                            processo de treinamento para garantir que sua equipe esteja alinhada com as melhores
-                            práticas de
-                            compliance. Acompanhe cada etapa de perto e veja o impacto do aprendizado contínuo na sua
-                            empresa.
-                        </p>
-                    </div>
-                    <div class="solutions-panel" id="panel-automacao" role="tabpanel" tabindex="0"
-                        aria-labelledby="tab-automacao" hidden>
-                        <p class="solutions-intro">
-                            Simplifique e ganhe tempo com a automação dos processos de compliance. Nossa ferramenta
-                            permite aprovações
-                            automáticas, encaminhamento de demandas aos setores corretos, lembretes personalizados e
-                            gestão completa
-                            de pendências. É menos trabalho manual e mais eficiência para o time de compliance!
-                        </p>
-                    </div>
-                    <div class="solutions-panel" id="panel-documentos" role="tabpanel" tabindex="0"
-                        aria-labelledby="tab-documentos" hidden>
-                        <p class="solutions-intro">
-                            Centralize e organize! Nosso módulo/ferramenta permite o armazenamento seguro dos documentos
-                            da empresa,
-                            com registros de leitura e aceite. Acompanhe o compliance de perto, garantindo que todos
-                            estejam cientes e
-                            em linha com os regulamentos.
-                        </p>
+                    <div class="solutions-panels">
+                        <div class="solutions-panel is-active" id="panel-denuncias" role="tabpanel" tabindex="0"
+                            aria-labelledby="tab-denuncias">
+                            <p class="solutions-intro">
+                                Um lugar seguro para se comunicar, registrar e tratar denúncias. Aqui, qualquer
+                                preocupação
+                                ou
+                                irregularidade pode ser reportada com a confidencialidade que você espera e a rapidez
+                                que
+                                você precisa.
+                                Porque sabemos que integridade é coisa séria, e queremos ser parte da solução.
+                            </p>
+                        </div>
+                        <div class="solutions-panel" id="panel-treinamentos" role="tabpanel" tabindex="0"
+                            aria-labelledby="tab-treinamentos" hidden>
+                            <p class="solutions-intro">
+                                Treinamentos feitos sob medida para engajar e capacitar! Neste módulo, desenvolvemos e
+                                gerenciamos todo o
+                                processo de treinamento para garantir que sua equipe esteja alinhada com as melhores
+                                práticas de
+                                compliance. Acompanhe cada etapa de perto e veja o impacto do aprendizado contínuo na
+                                sua
+                                empresa.
+                            </p>
+                        </div>
+                        <div class="solutions-panel" id="panel-automacao" role="tabpanel" tabindex="0"
+                            aria-labelledby="tab-automacao" hidden>
+                            <p class="solutions-intro">
+                                Simplifique e ganhe tempo com a automação dos processos de compliance. Nossa ferramenta
+                                permite aprovações
+                                automáticas, encaminhamento de demandas aos setores corretos, lembretes personalizados e
+                                gestão completa
+                                de pendências. É menos trabalho manual e mais eficiência para o time de compliance!
+                            </p>
+                        </div>
+                        <div class="solutions-panel" id="panel-documentos" role="tabpanel" tabindex="0"
+                            aria-labelledby="tab-documentos" hidden>
+                            <p class="solutions-intro">
+                                Centralize e organize! Nosso módulo/ferramenta permite o armazenamento seguro dos
+                                documentos
+                                da empresa,
+                                com registros de leitura e aceite. Acompanhe o compliance de perto, garantindo que todos
+                                estejam cientes e
+                                em linha com os regulamentos.
+                            </p>
+                        </div>
                     </div>
                 </div>
-
                 <h3 class="solutions-more-title">E tem mais...</h3>
 
                 <div class="solutions-grid">

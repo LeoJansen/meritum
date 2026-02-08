@@ -3,6 +3,9 @@
   /* ===== Reset simples ===== */
 
   /* ===== Utilitários ===== */
+.section {
+    padding: 48px 48px;
+}
 
   /* ===== Botões ===== */
 
@@ -11,12 +14,30 @@
   /* ===== Formulário ===== */
 
   /* ===== Hero secundário ===== */
-
+.hero-secondary {
+   padding-top: 48px;
+   padding-bottom: 48px;
+  }
   /* ===== Vídeo ===== */
-
+.video-inner {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
   /* ===== Métricas ===== */
-
+.metrics-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
   /* ===== Produtividade ===== */
+  .productivity-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .productivity-content {
+    
+    gap: 48px;
+  }
 
   /* ===== Soluções ===== */
 
