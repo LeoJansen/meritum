@@ -635,7 +635,7 @@ h1 {
 }
 
 .solutions-highlight {
-    background-color: #EFF1F7;
+    background-color: hsl(225 83.33% 91.29%);
     border-radius: 12px;
     padding: 48px 24px;
     display: flex;
@@ -643,6 +643,7 @@ h1 {
     align-items: center;
     gap: 48px;
     text-align: center;
+    box-shadow: rgba(11 22 48 / 0.234681) 0px 8px 118px 1px;
 }
 
 .solutions-highlight h2 {
@@ -702,9 +703,13 @@ h1 {
 }
 
 .solutions-more-title {
-    font-size: 1.1rem;
-    margin: 0 0 16px;
+    font-size: 1.5rem;
+    margin: 36px 0;
     text-align: center;
+    
+    color: #484391;
+    font-weight: 600;
+    letter-spacing: 0.01em;
 }
 
 .solutions-grid {
@@ -737,7 +742,7 @@ h1 {
 }
 
 .solution-card h3 {
-    margin: 0 0 8px;
+    margin: 8px;
     font-size: 1.2rem;
     font-weight: 600;
     color: #3370B2;
