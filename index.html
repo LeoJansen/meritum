@@ -109,7 +109,7 @@
                         nossa plataforma.
                     </p>
                     <div class="hero-secondary-btn">
-                        <button class="btn btn-secondary">Agende uma demonstração</button>
+                        <button class="btn btn-secondary js-scroll-footer">Agende uma demonstração</button>
                     </div>
 
                 </div>
@@ -137,7 +137,7 @@
                     </p>
                 </div>
                 <div class="video-text-btn">
-                    <button class="btn btn-secondary">Agende uma demonstração</button>
+                    <button class="btn btn-secondary js-scroll-footer">Agende uma demonstração</button>
                 </div>
             </div>
         </section>
@@ -248,7 +248,7 @@
                 </p>
 
                 <div class="section-cta">
-                    <button class="btn btn-primary">Agende uma demonstração</button>
+                    <button class="btn btn-primary js-scroll-footer">Agende uma demonstração</button>
                 </div>
             </div>
         </section>
@@ -271,7 +271,7 @@
                         <li>Automação baseada em regras de políticas e normas</li>
                     </ul>
                     <div class="productivity-cta">
-                        <button class="btn btn-primary">Agende uma demonstração</button>
+                        <button class="btn btn-primary js-scroll-footer">Agende uma demonstração</button>
                     </div>
                 </div>
                 <figure class="productivity-visual">
@@ -392,7 +392,7 @@
                 </div>
 
                 <div class="section-cta">
-                    <button class="btn btn-primary">Agende uma demonstração</button>
+                    <button class="btn btn-primary js-scroll-footer">Agende uma demonstração</button>
                 </div>
             </div>
         </section>
@@ -442,7 +442,7 @@
                 </div>
 
                 <div class="section-cta">
-                    <button class="btn btn-secondary">Agende uma demonstração</button>
+                    <button class="btn btn-secondary js-scroll-footer">Agende uma demonstração</button>
                 </div>
             </div>
         </section>
@@ -622,6 +622,23 @@
                     activateTab(nextTab);
                     nextTab.focus();
                 });
+            });
+        })();
+
+        (() => {
+            const footer = document.querySelector('.site-footer');
+            if (!footer) return;
+
+            const buttons = document.querySelectorAll('.js-scroll-footer');
+            if (!buttons.length) return;
+
+            const handleClick = (event) => {
+                event.preventDefault();
+                footer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            };
+
+            buttons.forEach((button) => {
+                button.addEventListener('click', handleClick);
             });
         })();
     </script>
