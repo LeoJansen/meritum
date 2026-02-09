@@ -751,6 +751,7 @@ h1 {
 /* ===== Certificações ===== */
 .compliance-section {
     text-align: center;
+    background-color: #FFFFFF;
     
 }
 
@@ -768,15 +769,15 @@ h1 {
     min-height: 120px;
     padding: 16px 12px;
     border-radius: 18px;
-    background-color: #0b1630;
-    color: #ffffff;
+    background-color: #F5F6F8;
+    color: #6D6D6D;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: 16px;
     text-align: left;
-    box-shadow: 0 8px 18px rgba(11, 22, 48, 0.2);
+    box-shadow: 0 2px 8px rgba(11, 22, 48, 0.2);
 }
 
 .cert-card-image {
@@ -784,6 +785,7 @@ h1 {
     height: 64px;
     object-fit: contain;
     margin-left: 15px;
+    
 }
 
 .cert-card-image--pro-etica {
