@@ -22,6 +22,17 @@
     padding: 28px 18px;
 }
 
+/* Botão "Voltar ao site" (após os vídeos) */
+.obg-back-btn {
+    background-color: #0b1630;
+    color: #ffffff;
+}
+
+.obg-back-btn:hover,
+.obg-back-btn:focus-visible {
+    background-color: #285f97;
+}
+
 .obg-video-area .video-inner {
     color: #0b1630;
 }
@@ -46,6 +57,19 @@
     margin: 0 0 12px;
     font-size: 1.1rem;
     font-weight: 700;
+    color: #0b1630;
+}
+
+.obg-video-desc {
+    margin: -6px 0 14px;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: #0b1630;
+}
+
+.video-fallback {
+    margin-top: 12px;
+    font-size: 0.59rem;
     color: #0b1630;
 }
 
