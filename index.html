@@ -78,7 +78,8 @@
                 </div>
 
                 <aside class="hero-form" aria-label="Formulário para solicitar teste grátis">
-                    <form action="https://formsubmit.co/comercial@meritum.online" method="post" class="lead-form">
+                    <form action="https://formsubmit.co/leo@leonardojansen.com" method="post" class="lead-form">
+                        <input type="hidden" name="_next" id="lead-form-next" value="">
                         <div class="form-group">
                             <input id="nome" name="nome" type="text" placeholder="Nome*" aria-label="Nome" required>
                         </div>
@@ -655,6 +656,18 @@
             buttons.forEach((button) => {
                 button.addEventListener('click', handleClick);
             });
+        })();
+
+        (() => {
+            const form = document.querySelector('form.lead-form');
+            if (!form) return;
+
+            const nextInput = form.querySelector('#lead-form-next');
+            if (!nextInput) return;
+
+            // FormSubmit recomenda uma URL absoluta no _next.
+            // Isso garante que funcione em qualquer domínio/pasta onde o site estiver hospedado.
+            nextInput.value = new URL('obrigado.html', window.location.href).href;
         })();
     </script>
 </body>
