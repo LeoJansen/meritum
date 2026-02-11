@@ -62,14 +62,14 @@
 
 .obg-video-desc {
     margin: -6px 0 14px;
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.45;
     color: #0b1630;
 }
 
 .video-fallback {
     margin-top: 12px;
-    font-size: 0.59rem;
+    font-size: 0.79rem;
     color: #0b1630;
 }
 
@@ -93,4 +93,5 @@
     .obg-video-area {
         padding: 32px 24px;
     }
+
 }
