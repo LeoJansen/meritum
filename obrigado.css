@@ -67,7 +67,7 @@
     color: #0b1630;
 }
 
-.video-fallback {
+.obg-video-area .video-fallback {
     margin-top: 12px;
     font-size: 0.79rem;
     color: #0b1630;
@@ -92,6 +92,13 @@
 
     .obg-video-area {
         padding: 32px 24px;
+    }
+
+
+    .obg-video-area .video-fallback {
+        margin-top: 12px;
+        font-size: 0.79rem;
+        color: #0b1630;
     }
 
 }
